@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSO_P2
 {
-    internal class Metrics
+    public class Metrics
     {
         public int commandsAmount;
         public int nestingLevel;

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Learn2CodeV2
 {
@@ -73,16 +74,16 @@ namespace Learn2CodeV2
                     break;
 
                 case "Import File ...":
-                    throw new NotImplementedException();
+                    loadTxtLabel.Visible = true;
+                    LoadButton.Visible = true;
+                    FilePathTextbox.Visible = true;
                     break;
 
                 default:
                     MessageBox.Show("PresetChoice went Wrong");
                     return;
             }
-
-
-            DisplayCommandsInBlock(loadedprogram);
+            DisplayCommandsInBlock(arrayCommands);
 
         }
 
@@ -227,12 +228,12 @@ namespace Learn2CodeV2
             // First we need to return the string[] arrayCommands to a List of Commands
             TxtToCommand txtToCommand = new TxtToCommand();
             List<ICommand> commandList = txtToCommand.ToCommandList(arrayCommands);
-            Character character = Character.GetInstance();
-            Executor executor = new Executor(character, commandList);
+            Grid grid = new Grid(100, 100);
+            Executor executor = new Executor(grid, commandList);
             executor.Run();
 
             // Use the consoleOutput instance (not the class name)
-            consoleOutput.WriteLine(executor.character.ToString());
+            consoleOutput.WriteLine(executor.grid.character.ToString());
             
             //Array.Clear(arrayCommands, 0, arrayCommands.Length);
             //character.position = new Position(0, 0);
@@ -257,6 +258,19 @@ namespace Learn2CodeV2
                 Array.Resize(ref arrayCommands, arrayCommands.Length - 1);
             }
             DisplayCommandsInBlock(arrayCommands);
+        }
+
+        private void LoadButton_Click(object sender, EventArgs e)
+        {
+            string filePath = FilePathTextbox.Text;
+            arrayCommands = File.ReadAllLines(filePath);
+            DisplayCommandsInBlock(arrayCommands);
+
+            loadTxtLabel.Visible = false;
+            loadTxtLabel.Visible = false;
+            LoadButton.Visible = false;
+            FilePathTextbox.Visible = false;
+
         }
     }
 }

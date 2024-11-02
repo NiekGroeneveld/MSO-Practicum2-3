@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MSO_P2
 {
-    internal class MoveCommand : ICommand
+    public class MoveCommand : ICommand
     {
         private int _steps;
 

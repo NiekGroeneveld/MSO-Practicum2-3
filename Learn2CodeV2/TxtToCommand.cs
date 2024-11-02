@@ -8,7 +8,7 @@ using System.Windows.Input;
 
 namespace MSO_P2
 {
-    internal class TxtToCommand : ICommandListFactory
+    public class TxtToCommand : ICommandListFactory
     {
         private Metrics _metrics;
 

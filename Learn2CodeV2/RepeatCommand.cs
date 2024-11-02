@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSO_P2
 {
-    internal class RepeatCommand : ICommand
+    public class RepeatCommand : ICommand
     {
         public int _count;
         public List<ICommand> _commands;

@@ -49,6 +49,9 @@
             this.Metrics = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.DeleteLastCommandButton = new System.Windows.Forms.Button();
+            this.loadTxtLabel = new System.Windows.Forms.Label();
+            this.FilePathTextbox = new System.Windows.Forms.TextBox();
+            this.LoadButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +61,7 @@
             this.PresetChoice.Items.AddRange(new object[] {
             "Basic",
             "Advanced",
-            "Export",
+            "Expert",
             "Import File ..."});
             this.PresetChoice.Location = new System.Drawing.Point(13, 13);
             this.PresetChoice.Name = "PresetChoice";
@@ -258,11 +261,43 @@
             this.DeleteLastCommandButton.UseVisualStyleBackColor = true;
             this.DeleteLastCommandButton.Click += new System.EventHandler(this.DeleteLastCommandButton_Click);
             // 
+            // loadTxtLabel
+            // 
+            this.loadTxtLabel.AutoSize = true;
+            this.loadTxtLabel.Location = new System.Drawing.Point(10, 67);
+            this.loadTxtLabel.Name = "loadTxtLabel";
+            this.loadTxtLabel.Size = new System.Drawing.Size(177, 16);
+            this.loadTxtLabel.TabIndex = 19;
+            this.loadTxtLabel.Text = "Paste the path to the file here";
+            this.loadTxtLabel.Visible = false;
+            // 
+            // FilePathTextbox
+            // 
+            this.FilePathTextbox.Location = new System.Drawing.Point(13, 87);
+            this.FilePathTextbox.Name = "FilePathTextbox";
+            this.FilePathTextbox.Size = new System.Drawing.Size(176, 22);
+            this.FilePathTextbox.TabIndex = 20;
+            this.FilePathTextbox.Visible = false;
+            // 
+            // LoadButton
+            // 
+            this.LoadButton.Location = new System.Drawing.Point(13, 116);
+            this.LoadButton.Name = "LoadButton";
+            this.LoadButton.Size = new System.Drawing.Size(75, 23);
+            this.LoadButton.TabIndex = 21;
+            this.LoadButton.Text = "Load";
+            this.LoadButton.UseVisualStyleBackColor = true;
+            this.LoadButton.Visible = false;
+            this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 675);
+            this.Controls.Add(this.LoadButton);
+            this.Controls.Add(this.FilePathTextbox);
+            this.Controls.Add(this.loadTxtLabel);
             this.Controls.Add(this.DeleteLastCommandButton);
             this.Controls.Add(this.Metrics);
             this.Controls.Add(this.RunButton);
@@ -312,6 +347,9 @@
         private System.Windows.Forms.Button Metrics;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button DeleteLastCommandButton;
+        private System.Windows.Forms.Label loadTxtLabel;
+        private System.Windows.Forms.TextBox FilePathTextbox;
+        private System.Windows.Forms.Button LoadButton;
     }
 }
 

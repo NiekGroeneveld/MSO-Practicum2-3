@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSO_P2
 {
-    internal interface ICommand
+    public interface ICommand
     {
         void Execute(Character character);
         int CountCommands();

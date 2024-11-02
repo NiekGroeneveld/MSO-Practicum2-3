@@ -8,7 +8,7 @@ namespace MSO_P2
     {
         Basic,
         Advanced,
-        Custom
+        Expert
     }
 
     public class PresetToCommand
@@ -43,7 +43,7 @@ namespace MSO_P2
                     }
                 },
                 {
-                    PresetLevel.Custom,
+                    PresetLevel.Expert,
                     new string[]
                     {
                         "Move 5",

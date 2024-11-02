@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Learn2CodeV2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace MSO_P2
 {
-    internal class Executor
+    public class Executor
     {
-        public Character character;
+        public Grid grid;
 
         public List<ICommand> commandList;
 
-        public Executor(Character character, List<ICommand> commandList)
+        public Executor(Grid grid, List<ICommand> commandList)
         {
-            this.character = character;
+            this.grid = grid;
             this.commandList = commandList;
         }
 
@@ -22,7 +23,7 @@ namespace MSO_P2
         {
             foreach (ICommand command in commandList)
             {
-                command.Execute(character);
+                command.Execute(grid.character);
             }
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSO_P2
 {
-    internal interface ICommandListFactory
+    public interface ICommandListFactory
     {
         ICommand ToCommand(string command);
         List<ICommand> ToCommandList(string[] lines);

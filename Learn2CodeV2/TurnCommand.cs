@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSO_P2
 {
-    internal class TurnCommand : ICommand
+    public class TurnCommand : ICommand
     {
         private string _turnDirection;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSO_P2
 {
-    internal class Character
+    public class Character
     {
         private static Character _instance;
 
@@ -14,21 +14,12 @@ namespace MSO_P2
 
         public Direction direction;
 
-        private Character()
+        public Character()
         {
             position = new Position(0, 0);
             direction = Direction.East;
         }
 
-        public static Character GetInstance()
-        {
-            if (_instance == null)
-            {
-                _instance = new Character();
-            }
-
-            return _instance;
-        }
 
         public Position GetPosition()
         {

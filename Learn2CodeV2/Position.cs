@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSO_P2
 {
-    internal class Position
+    public class Position
     {
         public int x;
         public int y;
