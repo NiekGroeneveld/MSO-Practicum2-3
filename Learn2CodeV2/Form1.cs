@@ -12,10 +12,10 @@ using System.IO;
 
 namespace Learn2CodeV2
 {
-    public partial class Form1 : Form
+    public partial class gridPanel : Form
     {
         private ConsoleTextBox consoleOutput;
-        public Form1()
+        public gridPanel()
         {
             InitializeComponent();
 
@@ -25,9 +25,11 @@ namespace Learn2CodeV2
             consoleOutput.Location = new Point(125, 435);  // X=12, Y=12 pixels from top-left
             consoleOutput.Size = new Size(400, 100);     // Width=400, Height=300
             this.Controls.Add(consoleOutput);            // Add it to the form
+
         }
         string[] arrayCommands = Array.Empty<string>();
         int indentLevel = 0;
+
 
         private void DisplayCommandsInBlock(String[] commandListString, int indentLevel = 0)
         {
@@ -222,22 +224,22 @@ namespace Learn2CodeV2
 
             }
         }
-
+        
         private void RunButton_Click(object sender, EventArgs e)
         {
             // First we need to return the string[] arrayCommands to a List of Commands
             TxtToCommand txtToCommand = new TxtToCommand();
             List<ICommand> commandList = txtToCommand.ToCommandList(arrayCommands);
-            Grid grid = new Grid(100, 100);
+            Grid grid = new Grid(11, 11);
             Executor executor = new Executor(grid, commandList);
             executor.Run();
 
+            GridControl gridControl = new GridControl(grid);
+            gridControl.SetPosition(550, 100);
+            this.Controls.Add(gridControl);
+
             // Use the consoleOutput instance (not the class name)
             consoleOutput.WriteLine(executor.grid.character.ToString());
-            
-            //Array.Clear(arrayCommands, 0, arrayCommands.Length);
-            //character.position = new Position(0, 0);
-            //DisplayCommandsInBlock(arrayCommands);
         }
 
         private void Metrics_Click(object sender, EventArgs e)
@@ -270,6 +272,16 @@ namespace Learn2CodeV2
             loadTxtLabel.Visible = false;
             LoadButton.Visible = false;
             FilePathTextbox.Visible = false;
+
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void gridViewPanel_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

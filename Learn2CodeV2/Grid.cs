@@ -12,7 +12,6 @@ namespace Learn2CodeV2
     {
         public int Width { get; private set; }
         public int Height { get; private set; }
-        private List<Position> pathHistory;
         public List<Position> closedPosition;
         public Character character { get; set; }
         public Position Endpoint { get; set; }
@@ -21,10 +20,9 @@ namespace Learn2CodeV2
         {
             Width = width;
             Height = height;
-            pathHistory = new List<Position>();
             closedPosition = new List<Position>();
             character = new Character(); // Character class handles initial position and direction
-            pathHistory.Add(character.position);
+            
             Endpoint = null;
         }
 
@@ -35,13 +33,11 @@ namespace Learn2CodeV2
             return withinbounds && isOpen;
         }
 
-        public IReadOnlyList<Position> GetPathHistory() => pathHistory.AsReadOnly();
-
         public void Reset()
         {
             character = new Character(); // Create new character with default position/direction
-            pathHistory.Clear();
-            pathHistory.Add(character.position);
+            character.pathHistory.Clear();
+            character.pathHistory.Add(character.position);
         }
     }
 }

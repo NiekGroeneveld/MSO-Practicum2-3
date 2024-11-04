@@ -14,10 +14,13 @@ namespace MSO_P2
 
         public Direction direction;
 
+        public List<Position> pathHistory = new List<Position>();   
+
         public Character()
         {
             position = new Position(0, 0);
             direction = Direction.East;
+            pathHistory.Add(position);
         }
 
 

@@ -4,7 +4,7 @@ using System.IO;
 
 namespace Learn2CodeV2
 {
-    public abstract class TxtToGrid
+    public class TxtToGrid
     {
         public Grid FileToGrid(string filePath)
         {

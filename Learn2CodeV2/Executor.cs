@@ -24,7 +24,9 @@ namespace MSO_P2
             foreach (ICommand command in commandList)
             {
                 command.Execute(grid.character);
+
             }
+
         }
     }
 }

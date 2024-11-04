@@ -1,6 +1,6 @@
 ﻿namespace Learn2CodeV2
 {
-    partial class Form1
+    partial class gridPanel
     {
         /// <summary>
         /// Required designer variable.
@@ -52,6 +52,8 @@
             this.loadTxtLabel = new System.Windows.Forms.Label();
             this.FilePathTextbox = new System.Windows.Forms.TextBox();
             this.LoadButton = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -290,7 +292,11 @@
             this.LoadButton.Visible = false;
             this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
             // 
-            // Form1
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
+            // gridPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -316,7 +322,7 @@
             this.Controls.Add(this.MoveButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PresetChoice);
-            this.Name = "Form1";
+            this.Name = "gridPanel";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -350,6 +356,8 @@
         private System.Windows.Forms.Label loadTxtLabel;
         private System.Windows.Forms.TextBox FilePathTextbox;
         private System.Windows.Forms.Button LoadButton;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Learn2CodeV2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -35,7 +36,10 @@ namespace MSO_P2
                     character.position.x -= _steps;
                     break;
             }
-
+            
+            //New line to add the position where the character has been.
+            character.pathHistory.Add(new Position(character.position.x, character.position.y));
+          
             Console.Write($"Move {_steps}, ");
         }
 
