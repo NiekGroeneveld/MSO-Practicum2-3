@@ -28,7 +28,7 @@ namespace Learn2CodeV2
 
         public bool IsValidPosition(Position position)
         {
-            bool withinbounds =  position.x >= 0 && position.x < Width && position.y >= 0 && position.y < Height;
+            bool withinbounds = true; // position.x >= 0 && position.x < Width && position.y >= 0 && position.y < Height;
             bool isOpen = closedPosition.Contains(position);
             return withinbounds && isOpen;
         }

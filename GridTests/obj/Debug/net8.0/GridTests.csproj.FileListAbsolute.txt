@@ -87,7 +87,6 @@ C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\bin\Debug\net8.0\zh-Hant\Micr
 C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\bin\Debug\net8.0\Learn2CodeV2.exe
-C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\bin\Debug\net8.0\Learn2CodeV2.pdb
 C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\bin\Debug\net8.0\Learn2CodeV2.exe.config
 C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\obj\Debug\net8.0\GridTests.csproj.AssemblyReference.cache
 C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\obj\Debug\net8.0\GridTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -101,3 +100,4 @@ C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\obj\Debug\net8.0\refint\GridT
 C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\obj\Debug\net8.0\GridTests.pdb
 C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\obj\Debug\net8.0\GridTests.genruntimeconfig.cache
 C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\obj\Debug\net8.0\ref\GridTests.dll
+C:\Users\ncgre\source\repos\Learn2CodeV2\GridTests\bin\Debug\net8.0\Learn2CodeV2.pdb

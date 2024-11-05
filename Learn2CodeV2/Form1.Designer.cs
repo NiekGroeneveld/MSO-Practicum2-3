@@ -54,6 +54,7 @@
             this.LoadButton = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.ResetButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -296,11 +297,24 @@
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
+            // ResetButton
+            // 
+            this.ResetButton.BackColor = System.Drawing.Color.Red;
+            this.ResetButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.ResetButton.Location = new System.Drawing.Point(389, 501);
+            this.ResetButton.Name = "ResetButton";
+            this.ResetButton.Size = new System.Drawing.Size(75, 23);
+            this.ResetButton.TabIndex = 22;
+            this.ResetButton.Text = "Reset";
+            this.ResetButton.UseVisualStyleBackColor = false;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
+            // 
             // gridPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 675);
+            this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.FilePathTextbox);
             this.Controls.Add(this.loadTxtLabel);
@@ -358,6 +372,7 @@
         private System.Windows.Forms.Button LoadButton;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.Button ResetButton;
     }
 }
 

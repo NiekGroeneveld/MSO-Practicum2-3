@@ -5,9 +5,13 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learn2CodeV2", "Learn2CodeV2\Learn2CodeV2.csproj", "{30BEB49B-380C-4C45-922C-73B210C39F12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PositionTests.Tests", "PositionTests.Tests\PositionTests.Tests.csproj", "{BDAFFC02-F0E3-49B7-A67C-2945B920DBE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PositionTests.Tests", "PositionTests.Tests\PositionTests.Tests.csproj", "{BDAFFC02-F0E3-49B7-A67C-2945B920DBE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridTests", "GridTests\GridTests.csproj", "{C92B30FA-EB00-4B76-AE48-CBE0810C4466}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GridTests", "GridTests\GridTests.csproj", "{C92B30FA-EB00-4B76-AE48-CBE0810C4466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandTests", "CommandTests\CommandTests.csproj", "{0BA87059-7617-4E37-9319-023F8F5760EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CEAC2628-C379-4B6D-80C7-C64EE5FC737D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +31,18 @@ Global
 		{C92B30FA-EB00-4B76-AE48-CBE0810C4466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C92B30FA-EB00-4B76-AE48-CBE0810C4466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C92B30FA-EB00-4B76-AE48-CBE0810C4466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BA87059-7617-4E37-9319-023F8F5760EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA87059-7617-4E37-9319-023F8F5760EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA87059-7617-4E37-9319-023F8F5760EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA87059-7617-4E37-9319-023F8F5760EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDAFFC02-F0E3-49B7-A67C-2945B920DBE8} = {CEAC2628-C379-4B6D-80C7-C64EE5FC737D}
+		{C92B30FA-EB00-4B76-AE48-CBE0810C4466} = {CEAC2628-C379-4B6D-80C7-C64EE5FC737D}
+		{0BA87059-7617-4E37-9319-023F8F5760EE} = {CEAC2628-C379-4B6D-80C7-C64EE5FC737D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92C2A5CA-5659-4122-B6F8-64033480F981}

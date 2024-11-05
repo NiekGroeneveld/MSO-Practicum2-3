@@ -1,6 +1,7 @@
 ﻿using MSO_P2;
 using System;
 using System.Drawing;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 using System.Xml.Schema;
 
@@ -38,13 +39,35 @@ namespace Learn2CodeV2
         {
             base.OnPaint(e);
             Graphics g = e.Graphics;
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            // Find the minimum and maximum x and y values in the path history
+            int minX = int.MaxValue, minY = int.MaxValue, maxX = int.MinValue, maxY = int.MinValue;
+            foreach (Position p in grid.character.pathHistory)
+            {
+                int x = p.x;
+                int y = p.y;
+                minX = Math.Min(x, minX);
+                minY = Math.Min(y, minY);
+                maxX = Math.Max(x, maxX);
+                maxY = Math.Max(y, maxY);
+            }
+
+            // Calculate total height to flip Y coordinates
+            int totalHeight = (maxY - minY + 1) * cellSize;
 
             // Draw the grid cells
-            for (int x = 0; x < grid.Width; x++)
+            for (int x = minX; x <= maxX; x++)
             {
-                for (int y = 0; y < grid.Height; y++)
+                for (int y = minY; y <= maxY; y++)
                 {
-                    Rectangle cellRect = new Rectangle(x * cellSize, y * cellSize, cellSize, cellSize);
+                    // Flip Y coordinate by subtracting from total height
+                    Rectangle cellRect = new Rectangle(
+                        (x - minX) * cellSize,
+                        totalHeight - ((y - minY + 1) * cellSize),
+                        cellSize,
+                        cellSize);
+
                     if (grid.closedPosition.Contains(new Position(x, y)))
                     {
                         g.FillRectangle(new SolidBrush(Color.FromArgb(255, 255, 230, 230)), cellRect);
@@ -57,26 +80,94 @@ namespace Learn2CodeV2
                 }
             }
 
-            //Draw the visitedpositions line
+            // Draw the visited positions line
             Pen pathPen = new Pen(Color.Yellow, 3);
             int lineoffset = cellSize / 2;
-            for (int i = 1; i < grid.character.pathHistory.Count; i++) 
+            for (int i = 1; i < grid.character.pathHistory.Count; i++)
             {
-                Position oldPosition = grid.character.pathHistory[i-1];
+                Position oldPosition = grid.character.pathHistory[i - 1];
                 Position newPosition = grid.character.pathHistory[i];
-                g.DrawLine(pathPen, (oldPosition.x*cellSize)+lineoffset, -(oldPosition.y*cellSize-lineoffset), newPosition.x*cellSize+lineoffset, -(newPosition.y*cellSize-lineoffset));
+                int oldX = (oldPosition.x - minX) * cellSize + lineoffset;
+                int oldY = totalHeight - ((oldPosition.y - minY + 1) * cellSize) + lineoffset;
+                int newX = (newPosition.x - minX) * cellSize + lineoffset;
+                int newY = totalHeight - ((newPosition.y - minY + 1) * cellSize) + lineoffset;
+
+                g.DrawLine(pathPen, oldX, oldY, newX, newY);
             }
 
-            // Draw the character
+            void DrawArrow(Graphics graphics, Rectangle bounds, Direction direction)
+            {
+                int centerX = bounds.X + bounds.Width / 2;
+                int centerY = bounds.Y + bounds.Height / 2;
+                int arrowSize = Math.Min(bounds.Width, bounds.Height) * 3 / 4;  // Arrow size is 75% of cell size
+
+                Point[] arrowPoints;
+
+                // Create points for the arrow based on direction
+                switch (direction)
+                {
+                    case Direction.North:
+                        arrowPoints = new Point[] {
+                    new Point(centerX, centerY - arrowSize/2),           // tip
+                    new Point(centerX - arrowSize/3, centerY + arrowSize/2),  // left bottom
+                    new Point(centerX + arrowSize/3, centerY + arrowSize/2)   // right bottom
+                };
+                        break;
+                    case Direction.South:
+                        arrowPoints = new Point[] {
+                    new Point(centerX, centerY + arrowSize/2),           // tip
+                    new Point(centerX - arrowSize/3, centerY - arrowSize/2),  // left top
+                    new Point(centerX + arrowSize/3, centerY - arrowSize/2)   // right top
+                };
+                        break;
+                    case Direction.East:
+                        arrowPoints = new Point[] {
+                    new Point(centerX + arrowSize/2, centerY),           // tip
+                    new Point(centerX - arrowSize/2, centerY - arrowSize/3),  // left top
+                    new Point(centerX - arrowSize/2, centerY + arrowSize/3)   // left bottom
+                };
+                        break;
+                    case Direction.West:
+                        arrowPoints = new Point[] {
+                    new Point(centerX - arrowSize/2, centerY),           // tip
+                    new Point(centerX + arrowSize/2, centerY - arrowSize/3),  // right top
+                    new Point(centerX + arrowSize/2, centerY + arrowSize/3)   // right bottom
+                };
+                        break;
+                    default:
+                        arrowPoints = new Point[] { };
+                        break;
+                }
+
+                // Draw the arrow
+                using (SolidBrush brush = new SolidBrush(Color.Green))
+                {
+                    graphics.FillPolygon(brush, arrowPoints);
+                }
+                using (Pen pen = new Pen(Color.DarkGreen, 1))
+                {
+                    graphics.DrawPolygon(pen, arrowPoints);
+                }
+            }
+
+            // Draw character as arrow
             Position charPos = grid.character.position;
-            Rectangle charRect = new Rectangle(charPos.x * cellSize, charPos.y * cellSize, cellSize, cellSize);
-            g.FillRectangle(Brushes.Green, charRect);
+            Rectangle charRect = new Rectangle(
+                (charPos.x - minX) * cellSize,
+                totalHeight - ((charPos.y - minY + 1) * cellSize),
+                cellSize,
+                cellSize);
+            DrawArrow(g, charRect, grid.character.direction);
 
             // Draw the endpoint
             if (grid.Endpoint != null)
             {
                 Position endPos = grid.Endpoint;
-                Rectangle endRect = new Rectangle(endPos.x * cellSize, endPos.y * cellSize, cellSize, cellSize);
+                Rectangle endRect = new Rectangle(
+                    (endPos.x - minX) * cellSize,
+                    totalHeight - ((endPos.y - minY + 1) * cellSize),
+                    cellSize,
+                    cellSize);
                 g.FillRectangle(Brushes.Red, endRect);
             }
         }

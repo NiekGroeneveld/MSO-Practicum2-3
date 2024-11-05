@@ -1,6 +1,5 @@
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\bin\Debug\Learn2CodeV2.exe.config
 C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\bin\Debug\Learn2CodeV2.exe
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\bin\Debug\Learn2CodeV2.pdb
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\bin\Debug\Learn2CodeV2.exe.config
 C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.csproj.AssemblyReference.cache
 C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.gridPanel.resources
 C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.Properties.Resources.resources
@@ -8,3 +7,4 @@ C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.csp
 C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.csproj.CoreCompileInputs.cache
 C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.exe
 C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.pdb
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\bin\Debug\Learn2CodeV2.pdb

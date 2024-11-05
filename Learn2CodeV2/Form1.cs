@@ -230,7 +230,7 @@ namespace Learn2CodeV2
             // First we need to return the string[] arrayCommands to a List of Commands
             TxtToCommand txtToCommand = new TxtToCommand();
             List<ICommand> commandList = txtToCommand.ToCommandList(arrayCommands);
-            Grid grid = new Grid(11, 11);
+            Grid grid = new Grid(14, 14); // has to be determined by loaded excercise.
             Executor executor = new Executor(grid, commandList);
             executor.Run();
 
@@ -283,6 +283,11 @@ namespace Learn2CodeV2
         private void gridViewPanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            Restarter.RestartApplication();
         }
     }
 }

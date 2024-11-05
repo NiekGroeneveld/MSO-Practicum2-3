@@ -20,7 +20,7 @@ namespace MSO_P2
         {
             position = new Position(0, 0);
             direction = Direction.East;
-            pathHistory.Add(position);
+            pathHistory.Add(new Position(0,0));
         }
 
 
