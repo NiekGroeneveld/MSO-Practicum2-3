@@ -332,13 +332,8 @@ namespace Learn2CodeV2
             _grid = new TxtToGrid().FileToGrid(filePath);
 
             GridControl gridControl = new GridControl(_grid);
-            gridControl.SetPosition(550, 100);
+            gridControl.SetPosition(450, 100);
             this.Controls.Add(gridControl);
-        }
-
-        public void WriteToConsole(string message)
-        {
-            _consoleOutput.AppendText(message);
         }
     }
 }
