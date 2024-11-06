@@ -8,8 +8,6 @@ namespace MSO_P2
 {
     public class Character
     {
-        private static Character _instance;
-
         public Position position;
 
         public Direction direction;

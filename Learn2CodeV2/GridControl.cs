@@ -41,20 +41,24 @@ namespace Learn2CodeV2
             Graphics g = e.Graphics;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-            // Find the minimum and maximum x and y values in the path history
-            //int minX = int.MaxValue, minY = int.MaxValue, maxX = int.MinValue, maxY = int.MinValue;
-            //foreach (Position p in grid.character.pathHistory)
-            //{
-            //    int x = p.x;
-            //    int y = p.y;
-            //    minX = Math.Min(x, minX);
-            //    minY = Math.Min(y, minY);
-            //    maxX = Math.Max(x, maxX);
-            //    maxY = Math.Max(y, maxY);
-            //}
-            int minX = 0, minY = 0;
-            int maxX = grid.Width - 1;
-            int maxY = grid.Height - 1;
+            //Find the minimum and maximum x and y values in the path history
+            int minX = int.MaxValue, minY = int.MaxValue, maxX = int.MinValue, maxY = int.MinValue;
+            foreach (Position p in grid.character.pathHistory)
+            {
+                int x = p.x;
+                int y = p.y;
+                minX = Math.Min(x, minX);
+                minY = Math.Min(y, minY);
+                maxX = Math.Max(x, maxX);
+                maxY = Math.Max(y, maxY);
+            }
+            if (maxX == 0 && maxY == 0)
+            {
+                minX = 0;
+                minY = -1 * (grid.Height - 1);
+                maxX = grid.Width - 1;
+                maxY = 0;
+            }
 
             // Calculate total height to flip Y coordinates
             int totalHeight = (maxY - minY + 1) * cellSize;

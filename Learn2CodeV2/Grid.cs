@@ -15,6 +15,7 @@ namespace Learn2CodeV2
         public List<Position> closedPosition;
         public Character character { get; set; }
         public Position Endpoint { get; set; }
+        public bool isExercise;
 
         public Grid(int width, int height)
         {

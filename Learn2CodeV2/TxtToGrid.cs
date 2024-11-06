@@ -29,7 +29,7 @@ namespace Learn2CodeV2
                     }
                     x++;
                 }
-                y++;
+                y--;
             }
 
             return grid;

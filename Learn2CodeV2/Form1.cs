@@ -28,7 +28,7 @@ namespace Learn2CodeV2
             consoleOutput.Size = new Size(400, 100);     // Width=400, Height=300
             this.Controls.Add(consoleOutput);            // Add it to the form
 
-            grid = new Grid(1, 1);
+            grid = new Grid(14, 14);
 
         }
         string[] arrayCommands = Array.Empty<string>();
