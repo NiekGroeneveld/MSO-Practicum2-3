@@ -226,7 +226,7 @@ namespace Learn2CodeV2
             TxtToCommand txtToCommand = new TxtToCommand();
             List<ICommand> commandList = txtToCommand.ToCommandList(_arrayCommands);
             Executor executor = new Executor(_grid, commandList);
-            string endResult = executor.Run();
+            executor.Run(_consoleOutput);
 
             GridControl gridControl = new GridControl(_grid);
             gridControl.SetPosition(450, 100);
@@ -235,7 +235,6 @@ namespace Learn2CodeV2
 
             // Use the consoleOutput instance (not the class name)
             _consoleOutput.WriteLine(executor.Grid.Character.ToString());
-            _consoleOutput.WriteLine(endResult);
         }
 
         private void Metrics_Click(object sender, EventArgs e)
@@ -335,6 +334,11 @@ namespace Learn2CodeV2
             GridControl gridControl = new GridControl(_grid);
             gridControl.SetPosition(550, 100);
             this.Controls.Add(gridControl);
+        }
+
+        public void WriteToConsole(string message)
+        {
+            _consoleOutput.AppendText(message);
         }
     }
 }
