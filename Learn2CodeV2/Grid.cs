@@ -17,21 +17,25 @@ namespace Learn2CodeV2
         public Position Endpoint { get; set; }
         public bool isExercise;
 
-        public Grid(int width, int height)
+        public Grid(int width, int height, bool isExercise)
         {
             Width = width;
             Height = height;
             closedPosition = new List<Position>();
             character = new Character(); // Character class handles initial position and direction
+            this.isExercise = isExercise;
             
             Endpoint = null;
         }
 
         public bool IsValidPosition(Position position)
         {
-            bool withinbounds = true; // position.x >= 0 && position.x < Width && position.y >= 0 && position.y < Height;
-            bool isOpen = closedPosition.Contains(position);
-            return withinbounds && isOpen;
+            return !closedPosition.Contains(position);
+        }
+
+        public bool IsOutOfBounds(Position position)
+        {
+            return position.x >= 0 && position.x < Width && position.y <= 0 && position.y > Height;
         }
 
         public void Reset()

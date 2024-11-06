@@ -10,35 +10,46 @@ namespace MSO_P2
 {
     public class MoveCommand : ICommand
     {
-        private int _steps;
+        public int _steps {  get; private set; }
 
         public MoveCommand(int steps)
         {
             _steps = steps;
         }
 
-        public void Execute(Character character)
+        public void Execute(Grid grid)
         {
             int newX = 0, newY = 0;
 
-            switch (character.direction)
+            switch (grid.character.direction)
             {
                 case Direction.North:
-                    character.position.y += _steps;
+                    grid.character.position.y += _steps;
                     break;
                 case Direction.East:
-                    character.position.x += _steps;
+                    grid.character.position.x += _steps;
                     break;
                 case Direction.South:
-                    character.position.y -= _steps;
+                    grid.character.position.y -= _steps;
                     break;
                 case Direction.West:
-                    character.position.x -= _steps;
+                    grid.character.position.x -= _steps;
                     break;
             }
-            
+
+            Position newPos = new Position(grid.character.position.x, grid.character.position.y);
+
+            if (grid.isExercise)
+            {
+                if (!grid.IsValidPosition(newPos))
+                    throw new MoveException("Character is in an invalid position");
+
+                if (grid.IsOutOfBounds(newPos))
+                    throw new MoveException("Character is out of bounds");
+            }
+
             //New line to add the position where the character has been.
-            character.pathHistory.Add(new Position(character.position.x, character.position.y));
+            grid.character.pathHistory.Add(new Position(grid.character.position.x, grid.character.position.y));
           
             Console.Write($"Move {_steps}, ");
         }

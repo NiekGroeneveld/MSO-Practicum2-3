@@ -19,13 +19,35 @@ namespace MSO_P2
             this.commandList = commandList;
         }
 
-        public void Run()
+        public string Run()
         {
-            foreach (ICommand command in commandList)
+            if (!grid.isExercise)
             {
-                command.Execute(grid.character);
+                foreach (ICommand command in commandList)
+                {
+                    command.Execute(grid);
+                }
+                return "Program finished succesfully";
             }
+            else
+            {
+                try
+                {
+                    foreach (ICommand command in commandList)
+                    {
+                        command.Execute(grid);
+                    }
+                }
+                catch (MoveException ex)
+                {
+                    return ex.Message;
+                }
 
+                if (grid.character.position.x == grid.Endpoint.x && grid.character.position.y == grid.Endpoint.y)
+                    return "Congratulations! The character made it to the end.";
+                else
+                    return "The character did not make it to the end. Please try again!";
+            }
         }
     }
 }

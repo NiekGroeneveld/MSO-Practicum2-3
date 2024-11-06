@@ -3,68 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|c:\\users\\eigenaar\\documents\\github\\mso-practicum2-3\\learn2codev2\\repeatuntilcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\repeatuntilcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|c:\\users\\eigenaar\\documents\\github\\mso-practicum2-3\\learn2codev2\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\movecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\movecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\turncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\turncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\gridcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\gridcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\txttogrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\txttogrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\txttocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\txttocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\executor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|c:\\users\\eigenaar\\documents\\github\\mso-practicum2-3\\learn2codev2\\executor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\executor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\metrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\metrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\repeatcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\repeatcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BA87059-7617-4E37-9319-023F8F5760EE}|CommandTests\\CommandTests.csproj|c:\\users\\eigenaar\\documents\\github\\mso-practicum2-3\\commandtests\\movecommandtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BA87059-7617-4E37-9319-023F8F5760EE}|CommandTests\\CommandTests.csproj|solutionrelative:commandtests\\movecommandtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\restarter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\restarter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\repeatuntilcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\repeatuntilcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\txttocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\txttocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\repeatcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\repeatcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\moveexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\moveexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\gridcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\gridcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\metrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\metrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\learn2codev2\\restarter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BEB49B-380C-4C45-922C-73B210C39F12}|Learn2CodeV2\\Learn2CodeV2.csproj|solutionrelative:learn2codev2\\restarter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C92B30FA-EB00-4B76-AE48-CBE0810C4466}|GridTests\\GridTests.csproj|c:\\users\\eigenaar\\documents\\github\\mso-practicum2-3\\gridtests\\txttogridtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,11 +94,146 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MoveException.cs",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\MoveException.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\MoveException.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\MoveException.cs",
+              "RelativeToolTip": "Learn2CodeV2\\MoveException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T14:06:10.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Executor.cs",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Executor.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\Executor.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Executor.cs",
+              "RelativeToolTip": "Learn2CodeV2\\Executor.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T13:40:00.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RepeatCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\RepeatCommand.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\RepeatCommand.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\RepeatCommand.cs",
+              "RelativeToolTip": "Learn2CodeV2\\RepeatCommand.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T16:04:57.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Grid.cs",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Grid.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\Grid.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Grid.cs",
+              "RelativeToolTip": "Learn2CodeV2\\Grid.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCUAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T15:40:28.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GridControl.cs",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\GridControl.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\GridControl.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\GridControl.cs",
+              "RelativeToolTip": "Learn2CodeV2\\GridControl.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwEIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T17:05:11.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TxtToCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\TxtToCommand.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\TxtToCommand.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\TxtToCommand.cs",
+              "RelativeToolTip": "Learn2CodeV2\\TxtToCommand.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwEsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T16:05:12.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RepeatUntilCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\RepeatUntilCommand.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\RepeatUntilCommand.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\RepeatUntilCommand.cs",
+              "RelativeToolTip": "Learn2CodeV2\\RepeatUntilCommand.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAswEYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T08:07:01.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Form1.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Form1.cs [Design]",
+              "RelativeToolTip": "Learn2CodeV2\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T20:34:47.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MoveCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\MoveCommand.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\MoveCommand.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\MoveCommand.cs",
+              "RelativeToolTip": "Learn2CodeV2\\MoveCommand.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAswC8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T13:11:03.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TxtToGrid.cs",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\TxtToGrid.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\TxtToGrid.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\TxtToGrid.cs",
+              "RelativeToolTip": "Learn2CodeV2\\TxtToGrid.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswBoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T16:03:11.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Form1.cs",
+              "RelativeDocumentMoniker": "Learn2CodeV2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Form1.cs",
+              "RelativeToolTip": "Learn2CodeV2\\Form1.cs",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAowPMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:11:41.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Character.cs",
               "RelativeDocumentMoniker": "Learn2CodeV2\\Character.cs",
@@ -106,139 +241,23 @@
               "RelativeToolTip": "Learn2CodeV2\\Character.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T11:26:40.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RepeatUntilCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\RepeatUntilCommand.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\RepeatUntilCommand.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\RepeatUntilCommand.cs",
-              "RelativeToolTip": "Learn2CodeV2\\RepeatUntilCommand.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T08:07:01.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TurnCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\TurnCommand.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\TurnCommand.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\TurnCommand.cs",
-              "RelativeToolTip": "Learn2CodeV2\\TurnCommand.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:04:57.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GridControl.cs",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\GridControl.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\GridControl.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\GridControl.cs",
-              "RelativeToolTip": "Learn2CodeV2\\GridControl.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwDYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T17:05:11.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MoveCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\MoveCommand.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\MoveCommand.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\MoveCommand.cs",
-              "RelativeToolTip": "Learn2CodeV2\\MoveCommand.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T15:40:58.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Grid.cs",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Grid.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\Grid.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Grid.cs",
-              "RelativeToolTip": "Learn2CodeV2\\Grid.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T15:40:28.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Form1.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\Form1.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Form1.cs",
-              "RelativeToolTip": "Learn2CodeV2\\Form1.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAowB4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T16:11:41.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TxtToGrid.cs",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\TxtToGrid.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\TxtToGrid.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\TxtToGrid.cs",
-              "RelativeToolTip": "Learn2CodeV2\\TxtToGrid.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAIwB8AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:03:11.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T11:26:40.53Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Form1.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\Form1.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Form1.cs [Design]",
-              "RelativeToolTip": "Learn2CodeV2\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:34:47.602Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Executor.cs",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Executor.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\Executor.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Executor.cs",
-              "RelativeToolTip": "Learn2CodeV2\\Executor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T10:20:37.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Position.cs",
               "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Position.cs",
               "RelativeDocumentMoniker": "Learn2CodeV2\\Position.cs",
               "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Position.cs",
               "RelativeToolTip": "Learn2CodeV2\\Position.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T11:47:52.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Metrics.cs",
               "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Metrics.cs",
               "RelativeDocumentMoniker": "Learn2CodeV2\\Metrics.cs",
@@ -250,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Restarter.cs",
               "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Restarter.cs",
               "RelativeDocumentMoniker": "Learn2CodeV2\\Restarter.cs",
@@ -262,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "MoveCommandTest.cs",
               "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\CommandTests\\MoveCommandTest.cs",
               "RelativeDocumentMoniker": "CommandTests\\MoveCommandTest.cs",
@@ -274,18 +293,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RepeatCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\RepeatCommand.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\RepeatCommand.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\RepeatCommand.cs",
-              "RelativeToolTip": "Learn2CodeV2\\RepeatCommand.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:04:57.33Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 17,
               "Title": "GridControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\GridControl.cs",
@@ -293,20 +300,7 @@
               "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\GridControl.cs [Design]",
               "RelativeToolTip": "Learn2CodeV2\\GridControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:03:04.178Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TxtToCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\TxtToCommand.cs",
-              "RelativeDocumentMoniker": "Learn2CodeV2\\TxtToCommand.cs",
-              "ToolTip": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\TxtToCommand.cs",
-              "RelativeToolTip": "Learn2CodeV2\\TxtToCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:05:12.49Z"
+              "WhenOpened": "2024-11-04T18:03:04.178Z"
             },
             {
               "$type": "Document",

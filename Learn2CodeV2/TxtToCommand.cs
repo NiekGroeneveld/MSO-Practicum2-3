@@ -16,7 +16,7 @@ namespace MSO_P2
         {
             _metrics = new Metrics();
             List<ICommand> commandList = new List<ICommand>();
-            Stack<(List<ICommand> commandList, int count)> commandStack = new Stack<(List<ICommand>, int)>();
+            Stack<(List<ICommand> commandList, string command)> commandStack = new Stack<(List<ICommand>, string)>();
             int currentIndentationLevel = 1;
             int repeatCount = 0;
 
@@ -27,8 +27,8 @@ namespace MSO_P2
 
                 if (command.StartsWith("Repeat"))
                 {
-                    repeatCount = int.Parse(command.Split(' ')[1]);
-                    commandStack.Push((commandList, repeatCount));
+                    //repeatCount = int.Parse(command.Split(' ')[1]);
+                    commandStack.Push((commandList, command.Split(' ')[1]));
                     commandList = new List<ICommand>();
                     currentIndentationLevel = indentationLevel;
 
@@ -46,12 +46,20 @@ namespace MSO_P2
                 {
                     while (commandStack.Count > 0)
                     {
-                        var (parentCommands, stackRepeatCount) = commandStack.Pop();
+                        var (parentCommands, stackRepeatInfo) = commandStack.Pop();
 
-                        RepeatCommand repeatCommand = new RepeatCommand(stackRepeatCount, commandList);
-
-                        commandList = parentCommands;
-                        commandList.Add(repeatCommand);
+                        if (stackRepeatInfo == "wall" || stackRepeatInfo == "edge")
+                        {
+                            RepeatUntilCommand repeatCommand = new RepeatUntilCommand(stackRepeatInfo, commandList);
+                            commandList = parentCommands;
+                            commandList.Add(repeatCommand);
+                        }
+                        else
+                        {
+                            RepeatCommand repeatCommand = new RepeatCommand(int.Parse(stackRepeatInfo), commandList);
+                            commandList = parentCommands;
+                            commandList.Add(repeatCommand);
+                        }
                     }
 
                     commandList.Add(ToCommand(command));
@@ -60,12 +68,20 @@ namespace MSO_P2
 
             while (commandStack.Count > 0)
             {
-                var (parentCommands, stackRepeatCount) = commandStack.Pop();
+                var (parentCommands, stackRepeatInfo) = commandStack.Pop();
 
-                RepeatCommand repeatCommand = new RepeatCommand(stackRepeatCount, commandList);
-
-                commandList = parentCommands;
-                commandList.Add(repeatCommand);
+                if (stackRepeatInfo == "wall" || stackRepeatInfo == "edge")
+                {
+                    RepeatUntilCommand repeatCommand = new RepeatUntilCommand(stackRepeatInfo, commandList);
+                    commandList = parentCommands;
+                    commandList.Add(repeatCommand);
+                }
+                else
+                {
+                    RepeatCommand repeatCommand = new RepeatCommand(int.Parse(stackRepeatInfo), commandList);
+                    commandList = parentCommands;
+                    commandList.Add(repeatCommand);
+                }
             }
 
             return commandList;

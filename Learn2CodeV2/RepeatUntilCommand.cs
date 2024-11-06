@@ -1,4 +1,5 @@
-﻿using MSO_P2;
+﻿using Learn2CodeV2;
+using MSO_P2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,51 +15,76 @@ namespace MSO_P2
 
         private List<ICommand> CommandList;
 
-        public void Execute(Character character)
+        private int numberOfCommands;
+
+        public RepeatUntilCommand(string condition, List<ICommand> commandList)
         {
-            while (true)
+            this.condition = condition;
+            CommandList = commandList;
+            numberOfCommands = 0;
+        }
+
+        public void Execute(Grid grid)
+        {
+            int iterations = 0;
+
+            while (iterations < 100)
             {
                 foreach (ICommand command in CommandList)
                 {
                     //Calculate new position
-                    int newX = character.position.x, newY = character.position.y;
+                    int newX = grid.character.position.x, newY = grid.character.position.y;
+                    int steps = 1;
 
-                    switch (character.direction)
+                    if (command is MoveCommand moveCommand)
+                    {
+                        steps = moveCommand._steps;
+                    }
+
+                    switch (grid.character.direction)
                     {
                         case Direction.North:
-                            newY += 1;
+                            newY += steps;
                             break;
                         case Direction.East:
-                            newX += 1;
+                            newX += steps;
                             break;
                         case Direction.South:
-                            newY -= 1;
+                            newY -= steps;
                             break;
                         case Direction.West:
-                            newX -= 1;
+                            newX -= steps;
                             break;
                     }
+
+                    Position newPos = new Position(newX, newY);
 
                     if (condition == "wall")
                     {
-                        //Check if next position is wall
-                        //Check if next position is in invalid positions
-                        return;
+                        if (grid.closedPosition.Contains(newPos))
+                        {
+                            return;
+                        }
                     }
                     else if (condition == "edge")
                     {
-                        //Check if next position is out of bounds
-                        return;
+                        if (newX > grid.Width - 1 || (newY * -1) > grid.Height - 1)
+                        {
+                            return;
+                        }
                     }
 
-                    command.Execute(character);
+                    command.Execute(grid);
+
+                    iterations++;
+                    numberOfCommands++;
                 }
             }
         }
 
         public int CountCommands()
         {
-            return 0;
+            return numberOfCommands;
         }
     }
 }

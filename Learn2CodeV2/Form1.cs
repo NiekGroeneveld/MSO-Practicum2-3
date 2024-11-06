@@ -28,7 +28,7 @@ namespace Learn2CodeV2
             consoleOutput.Size = new Size(400, 100);     // Width=400, Height=300
             this.Controls.Add(consoleOutput);            // Add it to the form
 
-            grid = new Grid(14, 14);
+            grid = new Grid(100, 100, false);
 
         }
         string[] arrayCommands = Array.Empty<string>();
@@ -234,9 +234,8 @@ namespace Learn2CodeV2
             // First we need to return the string[] arrayCommands to a List of Commands
             TxtToCommand txtToCommand = new TxtToCommand();
             List<ICommand> commandList = txtToCommand.ToCommandList(arrayCommands);
-            //Grid grid = new Grid(14, 14); // has to be determined by loaded excercise.
             Executor executor = new Executor(grid, commandList);
-            executor.Run();
+            string endResult = executor.Run();
 
             GridControl gridControl = new GridControl(grid);
             gridControl.SetPosition(550, 100);
@@ -245,6 +244,7 @@ namespace Learn2CodeV2
 
             // Use the consoleOutput instance (not the class name)
             consoleOutput.WriteLine(executor.grid.character.ToString());
+            consoleOutput.WriteLine(endResult);
         }
 
         private void Metrics_Click(object sender, EventArgs e)
@@ -306,7 +306,7 @@ namespace Learn2CodeV2
             indentLevel++;
             IndentLevelIndicator.Text = "IndentLevel: " + indentLevel;
 
-            string newCommand = new string(' ', indentLevel - 1) + $"Repeat until wall";
+            string newCommand = new string(' ', indentLevel - 1) + $"RepeatUntil wall";
             arrayCommands = arrayCommands.Concat(new[] { newCommand }).ToArray();
             DisplayCommandsInBlock(arrayCommands);
             WallButton.Visible = false;
@@ -320,7 +320,7 @@ namespace Learn2CodeV2
             indentLevel++;
             IndentLevelIndicator.Text = "IndentLevel: " + indentLevel;
 
-            string newCommand = new string(' ', indentLevel - 1) + $"Repeat until edge";
+            string newCommand = new string(' ', indentLevel - 1) + $"RepeatUntil edge";
             arrayCommands = arrayCommands.Concat(new[] { newCommand }).ToArray();
             DisplayCommandsInBlock(arrayCommands);
             WallButton.Visible = false;

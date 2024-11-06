@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="MoveException.cs" />
     <Compile Include="RepeatUntilCommand.cs" />
     <Compile Include="Restarter.cs" />
     <Compile Include="GridControl.cs">
