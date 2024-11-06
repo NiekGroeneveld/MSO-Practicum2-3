@@ -17,7 +17,7 @@ namespace Learn2CodeV2
 
         public void Execute(Grid grid)
         {
-            for (var i = 0; i < Count; i++)
+            for (int i = 0; i < Count; i++)
             {
                 foreach (var command in Commands)
                 {
@@ -28,7 +28,11 @@ namespace Learn2CodeV2
 
         public override string ToString()
         {
-            return $"REPEAT " + Count + " TIMES";
+            string result = $"REPEATED {Count} TIMES: (";
+            for (int i = 0; i < Commands.Count - 1; i++)
+                result += Commands[i].ToString() + " + ";
+
+            return result + Commands[Commands.Count - 1] + ")";
         }
 
         public int CountCommands()

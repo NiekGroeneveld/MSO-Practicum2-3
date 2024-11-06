@@ -76,6 +76,14 @@ namespace Learn2CodeV2
                 }
             }
         }
+        public override string ToString()
+        {
+            string result = $"REPEATED UNTIL {_condition.ToUpper()}: (";
+            for (int i = 0; i < _commandList.Count - 1; i++)
+                result += _commandList[i].ToString() + " + ";
+
+            return result + _commandList[_commandList.Count - 1] + ")";
+        }
 
         public int CountCommands()
         {

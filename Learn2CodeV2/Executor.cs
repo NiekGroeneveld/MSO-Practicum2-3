@@ -15,35 +15,28 @@ namespace Learn2CodeV2
             this.CommandList = commandList;
         }
 
-        public string Run()
+        public void Run(ConsoleTextBox console)
         {
-            if (!Grid.IsExercise)
+            try
             {
                 foreach (ICommand command in CommandList)
                 {
                     command.Execute(Grid);
+                    console.AppendText(command.ToString() + ", ");
                 }
-                return "Program finished succesfully";
             }
-            else
+            catch (MoveException ex) when (Grid.IsExercise)
             {
-                try
-                {
-                    foreach (ICommand command in CommandList)
-                    {
-                        command.Execute(Grid);
-                    }
-                }
-                catch (MoveException ex)
-                {
-                    return ex.Message;
-                }
-
-                if (Grid.Character.Position.X == Grid.Endpoint.Y && Grid.Character.Position.Y == Grid.Endpoint.Y)
-                    return "Congratulations! The character made it to the end.";
-                else
-                    return "The character did not make it to the end. Please try again!";
+                console.WriteLine(ex.Message);
             }
-        }
+
+            if (Grid.IsExercise)
+            {
+                if (Grid.Character.Position.X == Grid.Endpoint.Y && Grid.Character.Position.Y == Grid.Endpoint.Y)
+                    console.WriteLine("Congratulations! The character made it to the end.");
+                else
+                    console.WriteLine("The character did not make it to the end. Please try again!");
+            }
+        }  
     }
 }

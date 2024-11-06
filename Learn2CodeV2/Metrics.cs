@@ -10,9 +10,9 @@ namespace Learn2CodeV2
 
         public override string ToString()
         {
-            return $" The number of commands is: {CommandsAmount}\n" +
-                   $" The maximum nesting level is: {NestingLevel}\n" +
-                   $" The number of repeat commands is {RepeatAmount}";
+            return $"The number of commands is: {CommandsAmount}, " +
+                   $"the maximum nesting level is: {NestingLevel}, and " +
+                   $"the number of repeat commands is {RepeatAmount}";
         }
     }
 }

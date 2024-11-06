@@ -52,5 +52,10 @@ namespace Learn2CodeV2
         {
             return 1;
         }
+
+        public override string ToString()
+        {
+            return $"MOVE {Steps}";
+        }
     }
 }

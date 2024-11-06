@@ -28,7 +28,7 @@ namespace Learn2CodeV2
 
         public override string ToString()
         {
-            return $"TURN  " + _turnDirection.ToUpper();
+            return $"TURN " + _turnDirection.ToUpper();
         }
 
         public int CountCommands()
