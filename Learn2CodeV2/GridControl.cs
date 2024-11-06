@@ -89,14 +89,14 @@ namespace Learn2CodeV2
             }
 
             // Draw the endpoint
-            if (grid.Endpoint != null)
+            if (_grid.Endpoint != null)
             {
-                Position endPos = grid.Endpoint;
+                Position endPos = _grid.Endpoint;
                 Rectangle endRect = new Rectangle(
-                    (endPos.x - minX) * cellSize,
-                    totalHeight - ((endPos.y - minY + 1) * cellSize),
-                    cellSize,
-                    cellSize);
+                    (endPos.X - minX) * CellSize,
+                    totalHeight - ((endPos.Y - minY + 1) * CellSize),
+                    CellSize,
+                    CellSize);
                 g.FillRectangle(Brushes.Red, endRect);
             }
 
@@ -173,11 +173,11 @@ namespace Learn2CodeV2
             // Draw character as arrow
             Position charPos = _grid.Character.Position;
             Rectangle charRect = new Rectangle(
-                (charPos.x - minX) * cellSize,
-                totalHeight - ((charPos.y - minY + 1) * cellSize),
-                cellSize,
-                cellSize);
-            DrawArrow(g, charRect, grid.character.direction);   
+                (charPos.X - minX) * CellSize,
+                totalHeight - ((charPos.Y - minY + 1) * CellSize),
+                CellSize,
+                CellSize);
+            DrawArrow(g, charRect, _grid.Character.Direction);   
         }
     }
 }
