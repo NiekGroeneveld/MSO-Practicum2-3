@@ -10,7 +10,7 @@ namespace GridTests
         {
             //Assign
             TxtToGrid txtToGrid = new TxtToGrid();
-            string filePath = "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\GridTests\\TestGridTxt.txt";
+            string filePath = "TestGridTxt.txt";
 
             //Act
             Grid grid = txtToGrid.FileToGrid(filePath);

@@ -1,13 +1,4 @@
 C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\bin\Debug\Learn2CodeV2.exe
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\bin\Debug\Learn2CodeV2.exe.config
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.csproj.AssemblyReference.cache
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.gridPanel.resources
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.Properties.Resources.resources
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.csproj.GenerateResource.cache
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.csproj.CoreCompileInputs.cache
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.exe
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.pdb
-C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\bin\Debug\Learn2CodeV2.pdb
 C:\Users\Eigenaar\Documents\GitHub\MSO-Practicum2-3\Learn2CodeV2\bin\Debug\Learn2CodeV2.exe.config
 C:\Users\Eigenaar\Documents\GitHub\MSO-Practicum2-3\Learn2CodeV2\bin\Debug\Learn2CodeV2.exe
 C:\Users\Eigenaar\Documents\GitHub\MSO-Practicum2-3\Learn2CodeV2\bin\Debug\Learn2CodeV2.pdb
@@ -18,3 +9,12 @@ C:\Users\Eigenaar\Documents\GitHub\MSO-Practicum2-3\Learn2CodeV2\obj\Debug\Learn
 C:\Users\Eigenaar\Documents\GitHub\MSO-Practicum2-3\Learn2CodeV2\obj\Debug\Learn2CodeV2.csproj.CoreCompileInputs.cache
 C:\Users\Eigenaar\Documents\GitHub\MSO-Practicum2-3\Learn2CodeV2\obj\Debug\Learn2CodeV2.exe
 C:\Users\Eigenaar\Documents\GitHub\MSO-Practicum2-3\Learn2CodeV2\obj\Debug\Learn2CodeV2.pdb
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\bin\Debug\Learn2CodeV2.exe.config
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.csproj.AssemblyReference.cache
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.GridPanel.resources
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.Properties.Resources.resources
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.csproj.GenerateResource.cache
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.csproj.CoreCompileInputs.cache
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.exe
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\obj\Debug\Learn2CodeV2.pdb
+C:\Users\ncgre\source\repos\Learn2CodeV2\Learn2CodeV2\bin\Debug\Learn2CodeV2.pdb
