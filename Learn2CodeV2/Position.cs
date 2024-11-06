@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace MSO_P2
+namespace Learn2CodeV2
 {
     public class Position
     {
-        public int x;
-        public int y;
+        public int X;
+        public int Y;
 
         public Position(int x, int y)
         {
-            this.x = x;
-            this.y = y;
+            this.X = x;
+            this.Y = y;
         }
 
 
@@ -26,7 +22,7 @@ namespace MSO_P2
                 return false;
             }
             Position other = (Position)obj;
-            return x == other.x && y == other.y;
+            return X == other.X && Y == other.Y;
         }
 
         public override int GetHashCode()
@@ -34,8 +30,8 @@ namespace MSO_P2
             unchecked // Overflow is fine, just wrap
             {
                 int hash = 17;
-                hash = hash * 23 + x;
-                hash = hash * 23 + y;
+                hash = hash * 23 + X;
+                hash = hash * 23 + Y;
                 return hash;
             }
 

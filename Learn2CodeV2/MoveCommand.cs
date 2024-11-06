@@ -1,45 +1,39 @@
-﻿using Learn2CodeV2;
+﻿
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MSO_P2
+namespace Learn2CodeV2
 {
     public class MoveCommand : ICommand
     {
-        public int _steps {  get; private set; }
+        public int Steps {  get; private set; }
 
         public MoveCommand(int steps)
         {
-            _steps = steps;
+            Steps = steps;
         }
 
         public void Execute(Grid grid)
         {
-            int newX = 0, newY = 0;
 
-            switch (grid.character.direction)
+            switch (grid.Character.Direction)
             {
                 case Direction.North:
-                    grid.character.position.y += _steps;
+                    grid.Character.Position.Y += Steps;
                     break;
                 case Direction.East:
-                    grid.character.position.x += _steps;
+                    grid.Character.Position.X += Steps;
                     break;
                 case Direction.South:
-                    grid.character.position.y -= _steps;
+                    grid.Character.Position.Y -= Steps;
                     break;
                 case Direction.West:
-                    grid.character.position.x -= _steps;
+                    grid.Character.Position.X -= Steps;
                     break;
             }
 
-            Position newPos = new Position(grid.character.position.x, grid.character.position.y);
+            Position newPos = new Position(grid.Character.Position.X, grid.Character.Position.Y);
 
-            if (grid.isExercise)
+            if (grid.IsExercise)
             {
                 if (!grid.IsValidPosition(newPos))
                     throw new MoveException("Character is in an invalid position");
@@ -49,9 +43,9 @@ namespace MSO_P2
             }
 
             //New line to add the position where the character has been.
-            grid.character.pathHistory.Add(new Position(grid.character.position.x, grid.character.position.y));
+            grid.Character.PathHistory.Add(new Position(grid.Character.Position.X, grid.Character.Position.Y));
           
-            Console.Write($"Move {_steps}, ");
+            Console.Write($"Move {Steps}, ");
         }
 
         public int CountCommands()

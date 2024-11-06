@@ -1,29 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace MSO_P2
+namespace Learn2CodeV2
 {
     public class Metrics
     {
-        public int commandsAmount;
-        public int nestingLevel;
-        public int repeatAmount;
-
-        public Metrics()
-        { 
-            commandsAmount = 0;
-            nestingLevel = 0;
-            repeatAmount = 0;
-        }
+        public int CommandsAmount = 0;
+        public int NestingLevel = 0;
+        public int RepeatAmount = 0;
 
         public override string ToString()
         {
-            return $" The number of commands is: {commandsAmount}\n" +
-                   $" The maximum nesting level is: {nestingLevel}\n" +
-                   $" The number of repeat commands is {repeatAmount}";
+            return $" The number of commands is: {CommandsAmount}\n" +
+                   $" The maximum nesting level is: {NestingLevel}\n" +
+                   $" The number of repeat commands is {RepeatAmount}";
         }
     }
 }

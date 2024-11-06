@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace MSO_P2
+
+namespace Learn2CodeV2
 {
     public enum PresetLevel
     {
@@ -69,8 +69,7 @@ namespace MSO_P2
                 throw new ArgumentNullException(nameof(level), "Preset level cannot be null or empty");
             }
 
-            PresetLevel presetLevel;
-            if (Enum.TryParse(level, true, out presetLevel))
+            if (Enum.TryParse(level, true, out PresetLevel presetLevel))
             {
                 return PresetCommands[presetLevel];
             }
@@ -78,10 +77,7 @@ namespace MSO_P2
             throw new ArgumentException($"Invalid preset level: {level}", nameof(level));
         }
 
-        public string[] GetPreset(PresetLevel level)
-        {
-            return PresetCommands[level];
-        }
+
     }
 }
 

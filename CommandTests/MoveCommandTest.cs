@@ -1,4 +1,3 @@
-using MSO_P2;
 using Learn2CodeV2;
 
 namespace CommandTests
@@ -10,15 +9,15 @@ namespace CommandTests
         {
             //Assign
             ICommand command = new MoveCommand(3);
-            Grid grid = new Grid(10, 10); //Grid of a too large size to check. Creates a character at (0,0) facing east
+            Grid grid = new Grid(10, 10, false); //Grid of a too large size to check. Creates a character at (0,0) facing east
             Position endposition = new Position(3, 0);
             
             //Act
-            command.Execute(grid.character);
+            command.Execute(grid);
 
             //Assert
 
-            Assert.Equal(grid.character.position, endposition); 
+            Assert.Equal(grid.Character.Position, endposition); 
         }
     }
 }

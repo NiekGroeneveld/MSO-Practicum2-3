@@ -1,27 +1,22 @@
-﻿using Learn2CodeV2;
-using MSO_P2;
-using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 
-namespace MSO_P2
+
+namespace Learn2CodeV2
 {
     public class RepeatUntilCommand : ICommand
     {
-        private string condition;
+        private readonly string _condition;
 
-        private List<ICommand> CommandList;
+        private readonly List<ICommand> _commandList;
 
-        private int numberOfCommands;
+        private int _numberOfCommands;
 
         public RepeatUntilCommand(string condition, List<ICommand> commandList)
         {
-            this.condition = condition;
-            CommandList = commandList;
-            numberOfCommands = 0;
+            this._condition = condition;
+            _commandList = commandList;
+            _numberOfCommands = 0;
         }
 
         public void Execute(Grid grid)
@@ -30,18 +25,18 @@ namespace MSO_P2
 
             while (iterations < 100)
             {
-                foreach (ICommand command in CommandList)
+                foreach (ICommand command in _commandList)
                 {
                     //Calculate new position
-                    int newX = grid.character.position.x, newY = grid.character.position.y;
+                    int newX = grid.Character.Position.X, newY = grid.Character.Position.Y;
                     int steps = 1;
 
                     if (command is MoveCommand moveCommand)
                     {
-                        steps = moveCommand._steps;
+                        steps = moveCommand.Steps;
                     }
 
-                    switch (grid.character.direction)
+                    switch (grid.Character.Direction)
                     {
                         case Direction.North:
                             newY += steps;
@@ -59,14 +54,14 @@ namespace MSO_P2
 
                     Position newPos = new Position(newX, newY);
 
-                    if (condition == "wall")
+                    if (_condition == "wall")
                     {
-                        if (grid.closedPosition.Contains(newPos))
+                        if (grid.ClosedPosition.Contains(newPos))
                         {
                             return;
                         }
                     }
-                    else if (condition == "edge")
+                    else if (_condition == "edge")
                     {
                         if (newX > grid.Width - 1 || (newY * -1) > grid.Height - 1)
                         {
@@ -77,14 +72,14 @@ namespace MSO_P2
                     command.Execute(grid);
 
                     iterations++;
-                    numberOfCommands++;
+                    _numberOfCommands++;
                 }
             }
         }
 
         public int CountCommands()
         {
-            return numberOfCommands;
+            return _numberOfCommands;
         }
     }
 }

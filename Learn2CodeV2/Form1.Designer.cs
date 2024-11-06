@@ -1,6 +1,6 @@
 ﻿namespace Learn2CodeV2
 {
-    partial class gridPanel
+    partial class GridPanel
     {
         /// <summary>
         /// Required designer variable.
@@ -376,7 +376,7 @@
             this.PathfindingLoadButton.Visible = false;
             this.PathfindingLoadButton.Click += new System.EventHandler(this.PathfindingLoadButton_Click);
             // 
-            // gridPanel
+            // GridPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -409,7 +409,7 @@
             this.Controls.Add(this.MoveButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PresetChoice);
-            this.Name = "gridPanel";
+            this.Name = "GridPanel";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

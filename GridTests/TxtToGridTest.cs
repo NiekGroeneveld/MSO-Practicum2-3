@@ -1,4 +1,3 @@
-using MSO_P2;
 using Learn2CodeV2;
 using System.Runtime.CompilerServices;
 
@@ -15,7 +14,7 @@ namespace GridTests
 
             //Act
             Grid grid = txtToGrid.FileToGrid(filePath);
-            List<Position> closedPositions = grid.closedPosition;
+            List<Position> closedPositions = grid.ClosedPosition;
             Position closedPosition = new Position(1, 0);
 
             //Assert

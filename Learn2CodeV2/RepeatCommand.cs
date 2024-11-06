@@ -1,28 +1,25 @@
-﻿using Learn2CodeV2;
-using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MSO_P2
+
+namespace Learn2CodeV2
 {
     public class RepeatCommand : ICommand
     {
-        public int _count;
-        public List<ICommand> _commands;
+        public int Count;
+        public List<ICommand> Commands;
 
         public RepeatCommand(int count, List<ICommand> commands)
         {
-            _count = count;
-            _commands = commands;
+            Count = count;
+            Commands = commands;
         }
 
         public void Execute(Grid grid)
         {
-            for (int i = 0; i < _count; i++)
+            for (var i = 0; i < Count; i++)
             {
-                foreach (var command in _commands)
+                foreach (var command in Commands)
                 {
                     command.Execute(grid);
                 }
@@ -31,18 +28,18 @@ namespace MSO_P2
 
         public override string ToString()
         {
-            return $"REPEAT " + _count + " TIMES";
+            return $"REPEAT " + Count + " TIMES";
         }
 
         public int CountCommands()
         {
             int totalCommandCount = 0;
-            foreach (var command in _commands)
+            foreach (var command in Commands)
             {
                 totalCommandCount += command.CountCommands();
             }
             
-            return totalCommandCount * _count;
+            return totalCommandCount * Count;
         }
     }
 }

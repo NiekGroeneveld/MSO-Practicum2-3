@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-using System.Windows.Input;
 
-namespace MSO_P2
+
+namespace Learn2CodeV2
 {
     public class TxtToCommand : ICommandListFactory
     {
@@ -15,15 +12,14 @@ namespace MSO_P2
         public List<ICommand> ToCommandList(string[] lines)
         {
             _metrics = new Metrics();
-            List<ICommand> commandList = new List<ICommand>();
+            var commandList = new List<ICommand>();
             Stack<(List<ICommand> commandList, string command)> commandStack = new Stack<(List<ICommand>, string)>();
-            int currentIndentationLevel = 1;
-            int repeatCount = 0;
+            var currentIndentationLevel = 1;
 
-            foreach (string line in lines)
+            foreach (var line in lines)
             {
-                int indentationLevel = line.TakeWhile(Char.IsWhiteSpace).Count() + 1;
-                string command = line.Trim();
+                var indentationLevel = line.TakeWhile(Char.IsWhiteSpace).Count() + 1;
+                var command = line.Trim();
 
                 if (command.StartsWith("Repeat"))
                 {
@@ -32,10 +28,10 @@ namespace MSO_P2
                     commandList = new List<ICommand>();
                     currentIndentationLevel = indentationLevel;
 
-                    _metrics.repeatAmount += 1;
-                    if (currentIndentationLevel > _metrics.nestingLevel)
+                    _metrics.RepeatAmount += 1;
+                    if (currentIndentationLevel > _metrics.NestingLevel)
                     {
-                        _metrics.nestingLevel = currentIndentationLevel;
+                        _metrics.NestingLevel = currentIndentationLevel;
                     }
                 }
                 else if (indentationLevel > currentIndentationLevel)
@@ -113,7 +109,7 @@ namespace MSO_P2
                 totalCommandCount += command.CountCommands();
             }
 
-            _metrics.commandsAmount = totalCommandCount;
+            _metrics.CommandsAmount = totalCommandCount;
 
             return _metrics;
         }

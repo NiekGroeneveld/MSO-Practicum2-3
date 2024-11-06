@@ -1,31 +1,27 @@
-﻿using Learn2CodeV2;
-using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MSO_P2
+namespace Learn2CodeV2
 {
     public class Executor
     {
-        public Grid grid;
+        public Grid Grid;
 
-        public List<ICommand> commandList;
+        public List<ICommand> CommandList;
 
         public Executor(Grid grid, List<ICommand> commandList)
         {
-            this.grid = grid;
-            this.commandList = commandList;
+            this.Grid = grid;
+            this.CommandList = commandList;
         }
 
         public string Run()
         {
-            if (!grid.isExercise)
+            if (!Grid.IsExercise)
             {
-                foreach (ICommand command in commandList)
+                foreach (ICommand command in CommandList)
                 {
-                    command.Execute(grid);
+                    command.Execute(Grid);
                 }
                 return "Program finished succesfully";
             }
@@ -33,9 +29,9 @@ namespace MSO_P2
             {
                 try
                 {
-                    foreach (ICommand command in commandList)
+                    foreach (ICommand command in CommandList)
                     {
-                        command.Execute(grid);
+                        command.Execute(Grid);
                     }
                 }
                 catch (MoveException ex)
@@ -43,7 +39,7 @@ namespace MSO_P2
                     return ex.Message;
                 }
 
-                if (grid.character.position.x == grid.Endpoint.x && grid.character.position.y == grid.Endpoint.y)
+                if (Grid.Character.Position.X == Grid.Endpoint.Y && Grid.Character.Position.Y == Grid.Endpoint.Y)
                     return "Congratulations! The character made it to the end.";
                 else
                     return "The character did not make it to the end. Please try again!";

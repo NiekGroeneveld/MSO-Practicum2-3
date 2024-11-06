@@ -1,35 +1,33 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MSO_P2
+
+namespace Learn2CodeV2
 {
     public class Character
     {
-        public Position position;
+        public Position Position;
 
-        public Direction direction;
+        public Direction Direction;
 
-        public List<Position> pathHistory = new List<Position>();   
+        public List<Position> PathHistory = new List<Position>();   
 
         public Character()
         {
-            position = new Position(0, 0);
-            direction = Direction.East;
-            pathHistory.Add(new Position(0,0));
+            Position = new Position(0, 0);
+            Direction = Direction.East;
+            PathHistory.Add(new Position(0,0));
         }
 
 
         public Position GetPosition()
         {
-            return position;
+            return Position;
         }
 
         public override string ToString()
         {
-            return $"End state ({position.x},{position.y}) facing {direction}.";
+            return $"End state ({Position.X},{Position.Y}) facing {Direction}.";
         }
     }
 }

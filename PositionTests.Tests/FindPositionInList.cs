@@ -1,5 +1,4 @@
 using Learn2CodeV2;
-using MSO_P2;
 
 namespace PositionTests.Tests
 {

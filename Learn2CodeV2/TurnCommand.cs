@@ -1,15 +1,12 @@
-﻿using Learn2CodeV2;
+﻿
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MSO_P2
+
+namespace Learn2CodeV2
 {
     public class TurnCommand : ICommand
     {
-        private string _turnDirection;
+        private readonly string _turnDirection;
 
         public TurnCommand(string turnDirection)
         {
@@ -20,11 +17,11 @@ namespace MSO_P2
         {
             if (_turnDirection == "left")
             {
-                grid.character.direction = (Direction)(((int)grid.character.direction + 3) % 4);
+                grid.Character.Direction = (Direction)(((int)grid.Character.Direction + 3) % 4);
             }
             else if (_turnDirection == "right")
             {
-                grid.character.direction = (Direction)(((int)grid.character.direction + 1) % 4);
+                grid.Character.Direction = (Direction)(((int)grid.Character.Direction + 1) % 4);
             }
             Console.Write($"Turn {_turnDirection}, ");
         }

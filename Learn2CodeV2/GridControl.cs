@@ -1,16 +1,14 @@
-﻿using MSO_P2;
+﻿using Learn2CodeV2;
 using System;
 using System.Drawing;
-using System.Security.Cryptography;
 using System.Windows.Forms;
-using System.Xml.Schema;
 
 namespace Learn2CodeV2
 {
-    public class GridControl : Control
+    public sealed class GridControl : Control
     {
-        private Grid grid;
-        private int cellSize = 20;
+        private readonly Grid _grid;
+        private const int CellSize = 20;
 
         // Properties to control the grid's position
         public Point GridPosition
@@ -21,8 +19,8 @@ namespace Learn2CodeV2
 
         public GridControl(Grid grid)
         {
-            this.grid = grid;
-            this.Size = new Size(grid.Width * cellSize, grid.Height * cellSize);
+            this._grid = grid;
+            this.Size = new Size(grid.Width * CellSize, grid.Height * CellSize);
 
             // Make the control non-docked and moveable
             this.Dock = DockStyle.None;
@@ -43,12 +41,12 @@ namespace Learn2CodeV2
 
             //Find the minimum and maximum x and y values in the path history
             int minX = int.MaxValue, minY = int.MaxValue, maxX = int.MinValue, maxY = int.MinValue;
-            if (!grid.isExercise)
+            if (!_grid.IsExercise)
             {
-                foreach (Position p in grid.character.pathHistory)
+                foreach (Position p in _grid.Character.PathHistory)
                 {
-                    int x = p.x;
-                    int y = p.y;
+                    int x = p.X;
+                    int y = p.Y;
                     minX = Math.Min(x, minX);
                     minY = Math.Min(y, minY);
                     maxX = Math.Max(x, maxX);
@@ -58,13 +56,13 @@ namespace Learn2CodeV2
             else
             {
                 minX = 0;
-                minY = -1 * (grid.Height - 1);
-                maxX = grid.Width - 1;
+                minY = -1 * (_grid.Height - 1);
+                maxX = _grid.Width - 1;
                 maxY = 0;
             }
 
             // Calculate total height to flip Y coordinates
-            int totalHeight = (maxY - minY + 1) * cellSize;
+            int totalHeight = (maxY - minY + 1) * CellSize;
 
             // Draw the grid cells
             for (int x = minX; x <= maxX; x++)
@@ -73,12 +71,12 @@ namespace Learn2CodeV2
                 {
                     // Flip Y coordinate by subtracting from total height
                     Rectangle cellRect = new Rectangle(
-                        (x - minX) * cellSize,
-                        totalHeight - ((y - minY + 1) * cellSize),
-                        cellSize,
-                        cellSize);
+                        (x - minX) * CellSize,
+                        totalHeight - ((y - minY + 1) * CellSize),
+                        CellSize,
+                        CellSize);
 
-                    if (grid.closedPosition.Contains(new Position(x, y)))
+                    if (_grid.ClosedPosition.Contains(new Position(x, y)))
                     {
                         g.FillRectangle(new SolidBrush(Color.FromArgb(255, 255, 230, 230)), cellRect);
                     }
@@ -91,16 +89,16 @@ namespace Learn2CodeV2
             }
 
             // Draw the visited positions line
-            Pen pathPen = new Pen(Color.Yellow, 3);
-            int lineoffset = cellSize / 2;
-            for (int i = 1; i < grid.character.pathHistory.Count; i++)
+            Pen pathPen = new Pen(Color.CornflowerBlue, 3);
+            int lineoffset = CellSize / 2;
+            for (int i = 1; i < _grid.Character.PathHistory.Count; i++)
             {
-                Position oldPosition = grid.character.pathHistory[i - 1];
-                Position newPosition = grid.character.pathHistory[i];
-                int oldX = (oldPosition.x - minX) * cellSize + lineoffset;
-                int oldY = totalHeight - ((oldPosition.y - minY + 1) * cellSize) + lineoffset;
-                int newX = (newPosition.x - minX) * cellSize + lineoffset;
-                int newY = totalHeight - ((newPosition.y - minY + 1) * cellSize) + lineoffset;
+                Position oldPosition = _grid.Character.PathHistory[i - 1];
+                Position newPosition = _grid.Character.PathHistory[i];
+                int oldX = (oldPosition.X - minX) * CellSize + lineoffset;
+                int oldY = totalHeight - ((oldPosition.Y - minY + 1) * CellSize) + lineoffset;
+                int newX = (newPosition.X - minX) * CellSize + lineoffset;
+                int newY = totalHeight - ((newPosition.Y - minY + 1) * CellSize) + lineoffset;
 
                 g.DrawLine(pathPen, oldX, oldY, newX, newY);
             }
@@ -161,23 +159,23 @@ namespace Learn2CodeV2
             }
 
             // Draw character as arrow
-            Position charPos = grid.character.position;
+            Position charPos = _grid.Character.Position;
             Rectangle charRect = new Rectangle(
-                (charPos.x - minX) * cellSize,
-                totalHeight - ((charPos.y - minY + 1) * cellSize),
-                cellSize,
-                cellSize);
-            DrawArrow(g, charRect, grid.character.direction);
+                (charPos.X - minX) * CellSize,
+                totalHeight - ((charPos.Y - minY + 1) * CellSize),
+                CellSize,
+                CellSize);
+            DrawArrow(g, charRect, _grid.Character.Direction);
 
             // Draw the endpoint
-            if (grid.Endpoint != null)
+            if (_grid.Endpoint != null)
             {
-                Position endPos = grid.Endpoint;
+                Position endPos = _grid.Endpoint;
                 Rectangle endRect = new Rectangle(
-                    (endPos.x - minX) * cellSize,
-                    totalHeight - ((endPos.y - minY + 1) * cellSize),
-                    cellSize,
-                    cellSize);
+                    (endPos.X - minX) * CellSize,
+                    totalHeight - ((endPos.Y - minY + 1) * CellSize),
+                    CellSize,
+                    CellSize);
                 g.FillRectangle(Brushes.Red, endRect);
             }
         }

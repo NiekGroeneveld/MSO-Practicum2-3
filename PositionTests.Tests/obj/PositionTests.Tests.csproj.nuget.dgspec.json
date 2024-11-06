@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\PositionTests.Tests\\PositionTests.Tests.csproj": {}
+    "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\PositionTests.Tests\\PositionTests.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Learn2CodeV2.csproj": {
+    "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\Learn2CodeV2\\Learn2CodeV2.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Learn2CodeV2.csproj",
+        "projectUniqueName": "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\Learn2CodeV2\\Learn2CodeV2.csproj",
         "projectName": "Learn2CodeV2",
-        "projectPath": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Learn2CodeV2.csproj",
+        "projectPath": "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\Learn2CodeV2\\Learn2CodeV2.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -19,17 +19,17 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\PositionTests.Tests\\PositionTests.Tests.csproj": {
+    "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\PositionTests.Tests\\PositionTests.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\PositionTests.Tests\\PositionTests.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\PositionTests.Tests\\PositionTests.Tests.csproj",
         "projectName": "PositionTests.Tests",
-        "projectPath": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\PositionTests.Tests\\PositionTests.Tests.csproj",
-        "packagesPath": "C:\\Users\\Eigenaar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\PositionTests.Tests\\obj\\",
+        "projectPath": "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\PositionTests.Tests\\PositionTests.Tests.csproj",
+        "packagesPath": "C:\\Users\\ncgre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\PositionTests.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Eigenaar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ncgre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,8 +43,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Learn2CodeV2.csproj": {
-                "projectPath": "C:\\Users\\Eigenaar\\Documents\\GitHub\\MSO-Practicum2-3\\Learn2CodeV2\\Learn2CodeV2.csproj"
+              "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\Learn2CodeV2\\Learn2CodeV2.csproj": {
+                "projectPath": "C:\\Users\\ncgre\\source\\repos\\Learn2CodeV2\\Learn2CodeV2\\Learn2CodeV2.csproj"
               }
             }
           }

@@ -1,4 +1,4 @@
-﻿namespace MSO_P2
+﻿namespace Learn2CodeV2
 {
     public enum Direction
     {

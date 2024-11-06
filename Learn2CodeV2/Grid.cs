@@ -1,10 +1,5 @@
-﻿using MSO_P2;
-using System;
+﻿
 using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Learn2CodeV2
 {
@@ -12,37 +7,37 @@ namespace Learn2CodeV2
     {
         public int Width { get; private set; }
         public int Height { get; private set; }
-        public List<Position> closedPosition;
-        public Character character { get; set; }
+        public List<Position> ClosedPosition;
+        public Character Character { get; set; }
         public Position Endpoint { get; set; }
-        public bool isExercise;
+        public bool IsExercise;
 
         public Grid(int width, int height, bool isExercise)
         {
             Width = width;
             Height = height;
-            closedPosition = new List<Position>();
-            character = new Character(); // Character class handles initial position and direction
-            this.isExercise = isExercise;
+            ClosedPosition = new List<Position>();
+            Character = new Character(); // Character class handles initial position and direction
+            this.IsExercise = isExercise;
             
             Endpoint = null;
         }
 
         public bool IsValidPosition(Position position)
         {
-            return !closedPosition.Contains(position);
+            return !ClosedPosition.Contains(position);
         }
 
         public bool IsOutOfBounds(Position position)
         {
-            return position.x >= 0 && position.x < Width && position.y <= 0 && position.y > Height;
+            return position.X >= 0 && position.Y < Width && position.Y <= 0 && position.Y > Height;
         }
 
         public void Reset()
         {
-            character = new Character(); // Create new character with default position/direction
-            character.pathHistory.Clear();
-            character.pathHistory.Add(character.position);
+            Character = new Character(); // Create new character with default position/direction
+            Character.PathHistory.Clear();
+            Character.PathHistory.Add(Character.Position);
         }
     }
 }

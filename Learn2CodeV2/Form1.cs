@@ -1,38 +1,35 @@
-﻿using MSO_P2;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
 namespace Learn2CodeV2
 {
-    public partial class gridPanel : Form
+    public partial class GridPanel : Form
     {
-        private ConsoleTextBox consoleOutput;
+        private ConsoleTextBox _consoleOutput;
 
-        private Grid grid;
-        public gridPanel()
+        private Grid _grid;
+        public GridPanel()
         {
             InitializeComponent();
 
 
             // Create the console box
-            consoleOutput = new ConsoleTextBox();
-            consoleOutput.Location = new Point(125, 435);  // X=12, Y=12 pixels from top-left
-            consoleOutput.Size = new Size(400, 100);     // Width=400, Height=300
-            this.Controls.Add(consoleOutput);            // Add it to the form
+            _consoleOutput = new ConsoleTextBox();
+            _consoleOutput.Location = new Point(125, 435);  // X=12, Y=12 pixels from top-left
+            _consoleOutput.Size = new Size(400, 100);     // Width=400, Height=300
+            this.Controls.Add(_consoleOutput);            // Add it to the form
 
-            grid = new Grid(100, 100, false);
+            _grid = new Grid(100, 100, false);
 
         }
-        string[] arrayCommands = Array.Empty<string>();
-        int indentLevel = 0;
+        string[] _arrayCommands = Array.Empty<string>();
+        int _indentLevel = 0;
 
 
         private void DisplayCommandsInBlock(String[] commandListString, int indentLevel = 0)
@@ -48,7 +45,6 @@ namespace Learn2CodeV2
             {
                 // Format the command text to show only relevant information
                 indentLevel = command.TakeWhile(c => c == ' ').Count();
-                if(indentLevel == null) { indentLevel = 0; }
                 string commandText = new string(' ', indentLevel * 4) + command;
 
 
@@ -76,7 +72,7 @@ namespace Learn2CodeV2
                 case "Expert":
                     PresetToCommand presetToCommand = new PresetToCommand();
                     loadedprogram = presetToCommand.GetPreset(selectedLevel.ToLower());
-                    arrayCommands = loadedprogram;
+                    _arrayCommands = loadedprogram;
                     break;
 
                 case "Import File ...":
@@ -89,7 +85,7 @@ namespace Learn2CodeV2
                     MessageBox.Show("PresetChoice went Wrong");
                     return;
             }
-            DisplayCommandsInBlock(arrayCommands);
+            DisplayCommandsInBlock(_arrayCommands);
 
         }
 
@@ -117,16 +113,16 @@ namespace Learn2CodeV2
             {
                 if (int.TryParse(AmountStepsTextBox.Text, out int moves))
                 {
-                    string newCommand = new string(' ', indentLevel) + $"Move " + moves;
+                    string newCommand = new string(' ', _indentLevel) + $"Move " + moves;
 
                     OKButton.Visible = false;
                     AmountStepsTextBox.Visible = false;
                     LabelMove.Visible = false;
 
 
-                    arrayCommands = arrayCommands.Concat(new[] { newCommand }).ToArray();
+                    _arrayCommands = _arrayCommands.Concat(new[] { newCommand }).ToArray();
                     
-                    DisplayCommandsInBlock(arrayCommands);
+                    DisplayCommandsInBlock(_arrayCommands);
 
 
                     //Enable Invisible boxes
@@ -155,26 +151,26 @@ namespace Learn2CodeV2
 
         private void LeftButton_Click(object sender, EventArgs e)
         {
-            string newCommand = new string(' ', indentLevel) + $"Turn left";
-            arrayCommands = arrayCommands.Concat(new[] { newCommand }).ToArray();
-            DisplayCommandsInBlock(arrayCommands);
+            string newCommand = new string(' ', _indentLevel) + $"Turn left";
+            _arrayCommands = _arrayCommands.Concat(new[] { newCommand }).ToArray();
+            DisplayCommandsInBlock(_arrayCommands);
             LeftButton.Visible = false;
             RightButton.Visible = false;
         }
 
         private void RightButton_Click(object sender, EventArgs e)
         {
-            string newCommand = new string(' ', indentLevel) + $"Turn right";
-            arrayCommands = arrayCommands.Concat(new[] { newCommand }).ToArray();
-            DisplayCommandsInBlock(arrayCommands);
+            string newCommand = new string(' ', _indentLevel) + $"Turn right";
+            _arrayCommands = _arrayCommands.Concat(new[] { newCommand }).ToArray();
+            DisplayCommandsInBlock(_arrayCommands);
             LeftButton.Visible = false;
             RightButton.Visible = false;
         }
 
         private void RepeatButton_Click(object sender, EventArgs e)
         {
-            indentLevel++;
-            IndentLevelIndicator.Text = "IndentLevel: " + indentLevel;
+            _indentLevel++;
+            IndentLevelIndicator.Text = "IndentLevel: " + _indentLevel;
             EndRepeat.Visible = true;
             RepeatLabel.Visible = true;
             textBoxRepeat.Visible = true;
@@ -188,9 +184,9 @@ namespace Learn2CodeV2
 
         private void EndRepeat_Click(object sender, EventArgs e)
         {
-            indentLevel--;
-            if (indentLevel == 0) { EndRepeat.Visible = false; }
-            IndentLevelIndicator.Text = "IndentLevel: " + indentLevel;
+            _indentLevel--;
+            if (_indentLevel == 0) { EndRepeat.Visible = false; }
+            IndentLevelIndicator.Text = "IndentLevel: " + _indentLevel;
         }
 
         private void IndentLevelIndicator_Click(object sender, EventArgs e)
@@ -204,16 +200,16 @@ namespace Learn2CodeV2
             {
                 if (int.TryParse(textBoxRepeat.Text, out int repeats))
                 {
-                    string newCommand = new string(' ', indentLevel-1) + $"Repeat " + repeats + " times";
+                    string newCommand = new string(' ', _indentLevel-1) + $"Repeat " + repeats + " times";
 
                     OKRepeatButton.Visible = false;
                     textBoxRepeat.Visible = false;
                     RepeatLabel.Visible = false;
 
 
-                    arrayCommands = arrayCommands.Concat(new[] { newCommand }).ToArray();
+                    _arrayCommands = _arrayCommands.Concat(new[] { newCommand }).ToArray();
 
-                    DisplayCommandsInBlock(arrayCommands);
+                    DisplayCommandsInBlock(_arrayCommands);
 
 
                     //Enable Invisible boxes
@@ -231,47 +227,47 @@ namespace Learn2CodeV2
         
         private void RunButton_Click(object sender, EventArgs e)
         {
-            // First we need to return the string[] arrayCommands to a List of Commands
+            // First we need to return the string[] _arrayCommands to a List of Commands
             TxtToCommand txtToCommand = new TxtToCommand();
-            List<ICommand> commandList = txtToCommand.ToCommandList(arrayCommands);
-            Executor executor = new Executor(grid, commandList);
+            List<ICommand> commandList = txtToCommand.ToCommandList(_arrayCommands);
+            Executor executor = new Executor(_grid, commandList);
             string endResult = executor.Run();
 
-            GridControl gridControl = new GridControl(grid);
+            GridControl gridControl = new GridControl(_grid);
             gridControl.SetPosition(550, 100);
             this.Controls.Add(gridControl);
             this.Invalidate();
 
             // Use the consoleOutput instance (not the class name)
-            consoleOutput.WriteLine(executor.grid.character.ToString());
-            consoleOutput.WriteLine(endResult);
+            _consoleOutput.WriteLine(executor.Grid.Character.ToString());
+            _consoleOutput.WriteLine(endResult);
         }
 
         private void Metrics_Click(object sender, EventArgs e)
         {
             TxtToCommand txtToCommand = new TxtToCommand();
-            List<ICommand> commandList = txtToCommand.ToCommandList(arrayCommands);
+            List<ICommand> commandList = txtToCommand.ToCommandList(_arrayCommands);
             Metrics metrics = txtToCommand.GetMetrics(commandList);
-            consoleOutput.WriteLine(metrics.ToString());
+            _consoleOutput.WriteLine(metrics.ToString());
 
-            //Array.Clear(arrayCommands, 0, arrayCommands.Length);
-            //DisplayCommandsInBlock(arrayCommands);
+            //Array.Clear(_arrayCommands, 0, _arrayCommands.Length);
+            //DisplayCommandsInBlock(_arrayCommands);
         }
 
         private void DeleteLastCommandButton_Click(object sender, EventArgs e)
         {
-            if (arrayCommands.Length > 0)
+            if (_arrayCommands.Length > 0)
             {
-                Array.Resize(ref arrayCommands, arrayCommands.Length - 1);
+                Array.Resize(ref _arrayCommands, _arrayCommands.Length - 1);
             }
-            DisplayCommandsInBlock(arrayCommands);
+            DisplayCommandsInBlock(_arrayCommands);
         }
 
         private void LoadButton_Click(object sender, EventArgs e)
         {
             string filePath = FilePathTextbox.Text;
-            arrayCommands = File.ReadAllLines(filePath);
-            DisplayCommandsInBlock(arrayCommands);
+            _arrayCommands = File.ReadAllLines(filePath);
+            DisplayCommandsInBlock(_arrayCommands);
 
             loadTxtLabel.Visible = false;
             loadTxtLabel.Visible = false;
@@ -303,12 +299,12 @@ namespace Learn2CodeV2
 
         private void WallButton_Click(object sender, EventArgs e)
         {
-            indentLevel++;
-            IndentLevelIndicator.Text = "IndentLevel: " + indentLevel;
+            _indentLevel++;
+            IndentLevelIndicator.Text = "IndentLevel: " + _indentLevel;
 
-            string newCommand = new string(' ', indentLevel - 1) + $"RepeatUntil wall";
-            arrayCommands = arrayCommands.Concat(new[] { newCommand }).ToArray();
-            DisplayCommandsInBlock(arrayCommands);
+            string newCommand = new string(' ', _indentLevel - 1) + $"RepeatUntil wall";
+            _arrayCommands = _arrayCommands.Concat(new[] { newCommand }).ToArray();
+            DisplayCommandsInBlock(_arrayCommands);
             WallButton.Visible = false;
             EdgeButton.Visible = false;
 
@@ -317,12 +313,12 @@ namespace Learn2CodeV2
 
         private void EdgeButton_Click(object sender, EventArgs e)
         {
-            indentLevel++;
-            IndentLevelIndicator.Text = "IndentLevel: " + indentLevel;
+            _indentLevel++;
+            IndentLevelIndicator.Text = "IndentLevel: " + _indentLevel;
 
-            string newCommand = new string(' ', indentLevel - 1) + $"RepeatUntil edge";
-            arrayCommands = arrayCommands.Concat(new[] { newCommand }).ToArray();
-            DisplayCommandsInBlock(arrayCommands);
+            string newCommand = new string(' ', _indentLevel - 1) + $"RepeatUntil edge";
+            _arrayCommands = _arrayCommands.Concat(new[] { newCommand }).ToArray();
+            DisplayCommandsInBlock(_arrayCommands);
             WallButton.Visible = false;
             EdgeButton.Visible = false;
 
@@ -338,9 +334,9 @@ namespace Learn2CodeV2
         private void PathfindingLoadButton_Click(object sender, EventArgs e)
         {
             string filePath = PathfindingTextbox.Text;
-            grid = new TxtToGrid().FileToGrid(filePath);
+            _grid = new TxtToGrid().FileToGrid(filePath);
 
-            GridControl gridControl = new GridControl(grid);
+            GridControl gridControl = new GridControl(_grid);
             gridControl.SetPosition(550, 100);
             this.Controls.Add(gridControl);
         }

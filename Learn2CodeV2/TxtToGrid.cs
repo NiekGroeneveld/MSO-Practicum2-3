@@ -1,5 +1,4 @@
-﻿using MSO_P2;
-using System;
+﻿
 using System.IO;
 
 namespace Learn2CodeV2
@@ -20,7 +19,7 @@ namespace Learn2CodeV2
                     if (c == '+')
                     {
                         Position position = new Position(x, y);
-                        grid.closedPosition.Add(position);
+                        grid.ClosedPosition.Add(position);
                     }
                     if (c == 'x')
                     {
