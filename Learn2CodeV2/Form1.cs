@@ -21,8 +21,8 @@ namespace Learn2CodeV2
 
             // Create the console box
             _consoleOutput = new ConsoleTextBox();
-            _consoleOutput.Location = new Point(125, 435);  // X=12, Y=12 pixels from top-left
-            _consoleOutput.Size = new Size(400, 100);     // Width=400, Height=300
+            _consoleOutput.Location = new Point(400, 410);  // X=12, Y=12 pixels from top-left
+            _consoleOutput.Size = new Size(400, 120);     // Width=400, Height=300
             this.Controls.Add(_consoleOutput);            // Add it to the form
 
             _grid = new Grid(100, 100, false);
@@ -189,11 +189,6 @@ namespace Learn2CodeV2
             IndentLevelIndicator.Text = "IndentLevel: " + _indentLevel;
         }
 
-        private void IndentLevelIndicator_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void OKRepeatButton_Click(object sender, EventArgs e)
         {
             if (RepeatLabel.Visible && textBoxRepeat.Visible)
@@ -234,7 +229,7 @@ namespace Learn2CodeV2
             string endResult = executor.Run();
 
             GridControl gridControl = new GridControl(_grid);
-            gridControl.SetPosition(550, 100);
+            gridControl.SetPosition(450, 100);
             this.Controls.Add(gridControl);
             this.Invalidate();
 
@@ -329,6 +324,7 @@ namespace Learn2CodeV2
         {
             PathfindingLoadButton.Visible = true;
             PathfindingTextbox.Visible = true;
+            PathfindingLabel.Visible = true;
         }
 
         private void PathfindingLoadButton_Click(object sender, EventArgs e)
