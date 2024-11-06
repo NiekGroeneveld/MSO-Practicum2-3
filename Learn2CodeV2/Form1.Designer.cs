@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridPanel));
             this.PresetChoice = new System.Windows.Forms.ComboBox();
             this.flowPanelCommandsStrings = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -495,7 +496,7 @@
             this.PathfindingLabel.Text = "Paste the path to the file here:";
             this.PathfindingLabel.Visible = false;
             // 
-            // gridPanel
+            // GridPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -530,8 +531,9 @@
             this.Controls.Add(this.MoveButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PresetChoice);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GridPanel";
-            this.Text = "Form1";
+            this.Text = "Learn2Code";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
