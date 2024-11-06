@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GridTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de0e27f18a66bdcfbb8a51b5538030003e29b185")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99b81da4b010177e7a32551ca351096f05995bdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("GridTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GridTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
