@@ -20,13 +20,6 @@ public class ConsoleTextBox : TextBox
         this.WordWrap = true;
     }
 
-    // Method to append text with timestamp
-    public void WriteLineWithTimestamp(string text)
-    {
-        string timestamp = DateTime.Now.ToString("HH:mm:ss.fff");
-        this.AppendText($"[{timestamp}] {text}{Environment.NewLine}");
-        this.ScrollToBottom();
-    }
 
     // Method to append text without timestamp
     public void WriteLine(string text)
@@ -35,18 +28,6 @@ public class ConsoleTextBox : TextBox
         this.ScrollToBottom();
     }
 
-    // Method to write without new line
-    public void Write(string text)
-    {
-        this.AppendText(text);
-        this.ScrollToBottom();
-    }
-
-    // Clear the console
-    public void Clear()
-    {
-        this.Text = string.Empty;
-    }
 
     // Automatically scroll to bottom when new text is added
     private void ScrollToBottom()

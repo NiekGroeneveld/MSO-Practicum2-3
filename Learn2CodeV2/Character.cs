@@ -20,11 +20,6 @@ namespace Learn2CodeV2
         }
 
 
-        public Position GetPosition()
-        {
-            return Position;
-        }
-
         public override string ToString()
         {
             return $"End state ({Position.X},{Position.Y}) facing {Direction}.";

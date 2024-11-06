@@ -33,12 +33,6 @@ namespace Learn2CodeV2
             return position.X >= 0 && position.Y < Width && position.Y <= 0 && position.Y > Height;
         }
 
-        public void Reset()
-        {
-            Character = new Character(); // Create new character with default position/direction
-            Character.PathHistory.Clear();
-            Character.PathHistory.Add(Character.Position);
-        }
     }
 }
 
