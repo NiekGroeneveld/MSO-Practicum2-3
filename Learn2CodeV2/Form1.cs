@@ -15,6 +15,8 @@ namespace Learn2CodeV2
     public partial class gridPanel : Form
     {
         private ConsoleTextBox consoleOutput;
+
+        private Grid grid;
         public gridPanel()
         {
             InitializeComponent();
@@ -25,6 +27,8 @@ namespace Learn2CodeV2
             consoleOutput.Location = new Point(125, 435);  // X=12, Y=12 pixels from top-left
             consoleOutput.Size = new Size(400, 100);     // Width=400, Height=300
             this.Controls.Add(consoleOutput);            // Add it to the form
+
+            grid = new Grid(1, 1);
 
         }
         string[] arrayCommands = Array.Empty<string>();
@@ -230,13 +234,14 @@ namespace Learn2CodeV2
             // First we need to return the string[] arrayCommands to a List of Commands
             TxtToCommand txtToCommand = new TxtToCommand();
             List<ICommand> commandList = txtToCommand.ToCommandList(arrayCommands);
-            Grid grid = new Grid(14, 14); // has to be determined by loaded excercise.
+            //Grid grid = new Grid(14, 14); // has to be determined by loaded excercise.
             Executor executor = new Executor(grid, commandList);
             executor.Run();
 
             GridControl gridControl = new GridControl(grid);
             gridControl.SetPosition(550, 100);
             this.Controls.Add(gridControl);
+            this.Invalidate();
 
             // Use the consoleOutput instance (not the class name)
             consoleOutput.WriteLine(executor.grid.character.ToString());
@@ -288,6 +293,56 @@ namespace Learn2CodeV2
         private void ResetButton_Click(object sender, EventArgs e)
         {
             Restarter.RestartApplication();
+        }
+
+        private void RepeatUntilButton_Click(object sender, EventArgs e)
+        {
+            WallButton.Visible = true;
+            EdgeButton.Visible = true;
+        }
+
+        private void WallButton_Click(object sender, EventArgs e)
+        {
+            indentLevel++;
+            IndentLevelIndicator.Text = "IndentLevel: " + indentLevel;
+
+            string newCommand = new string(' ', indentLevel - 1) + $"Repeat until wall";
+            arrayCommands = arrayCommands.Concat(new[] { newCommand }).ToArray();
+            DisplayCommandsInBlock(arrayCommands);
+            WallButton.Visible = false;
+            EdgeButton.Visible = false;
+
+            EndRepeat.Visible = true;
+        }
+
+        private void EdgeButton_Click(object sender, EventArgs e)
+        {
+            indentLevel++;
+            IndentLevelIndicator.Text = "IndentLevel: " + indentLevel;
+
+            string newCommand = new string(' ', indentLevel - 1) + $"Repeat until edge";
+            arrayCommands = arrayCommands.Concat(new[] { newCommand }).ToArray();
+            DisplayCommandsInBlock(arrayCommands);
+            WallButton.Visible = false;
+            EdgeButton.Visible = false;
+
+            EndRepeat.Visible = true;
+        }
+
+        private void PathfindButton_Click(object sender, EventArgs e)
+        {
+            PathfindingLoadButton.Visible = true;
+            PathfindingTextbox.Visible = true;
+        }
+
+        private void PathfindingLoadButton_Click(object sender, EventArgs e)
+        {
+            string filePath = PathfindingTextbox.Text;
+            grid = new TxtToGrid().FileToGrid(filePath);
+
+            GridControl gridControl = new GridControl(grid);
+            gridControl.SetPosition(550, 100);
+            this.Controls.Add(gridControl);
         }
     }
 }
