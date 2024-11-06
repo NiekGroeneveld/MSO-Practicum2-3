@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Learn2CodeV2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,13 +18,13 @@ namespace MSO_P2
             _commands = commands;
         }
 
-        public void Execute(Character character)
+        public void Execute(Grid grid)
         {
             for (int i = 0; i < _count; i++)
             {
                 foreach (var command in _commands)
                 {
-                    command.Execute(character);
+                    command.Execute(grid);
                 }
             }
         }

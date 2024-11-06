@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PositionTests.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1889fdb5287c523d5a8a49191025031bbea0a6c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbde9d57d1e3b4c937b7e84b756251a977b512f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("PositionTests.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PositionTests.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

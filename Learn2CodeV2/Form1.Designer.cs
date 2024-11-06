@@ -55,6 +55,12 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.ResetButton = new System.Windows.Forms.Button();
+            this.RepeatUntilButton = new System.Windows.Forms.Button();
+            this.WallButton = new System.Windows.Forms.Button();
+            this.EdgeButton = new System.Windows.Forms.Button();
+            this.PathfindingButton = new System.Windows.Forms.Button();
+            this.PathfindingTextbox = new System.Windows.Forms.TextBox();
+            this.PathfindingLoadButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -309,11 +315,78 @@
             this.ResetButton.UseVisualStyleBackColor = false;
             this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
+            // RepeatUntilButton
+            // 
+            this.RepeatUntilButton.Location = new System.Drawing.Point(762, 13);
+            this.RepeatUntilButton.Name = "RepeatUntilButton";
+            this.RepeatUntilButton.Size = new System.Drawing.Size(161, 23);
+            this.RepeatUntilButton.TabIndex = 23;
+            this.RepeatUntilButton.Text = "REPEAT UNTIL";
+            this.RepeatUntilButton.UseVisualStyleBackColor = true;
+            this.RepeatUntilButton.Click += new System.EventHandler(this.RepeatUntilButton_Click);
+            // 
+            // WallButton
+            // 
+            this.WallButton.Location = new System.Drawing.Point(633, 67);
+            this.WallButton.Name = "WallButton";
+            this.WallButton.Size = new System.Drawing.Size(75, 23);
+            this.WallButton.TabIndex = 24;
+            this.WallButton.Text = "Wall";
+            this.WallButton.UseVisualStyleBackColor = true;
+            this.WallButton.Visible = false;
+            this.WallButton.Click += new System.EventHandler(this.WallButton_Click);
+            // 
+            // EdgeButton
+            // 
+            this.EdgeButton.Location = new System.Drawing.Point(715, 67);
+            this.EdgeButton.Name = "EdgeButton";
+            this.EdgeButton.Size = new System.Drawing.Size(75, 23);
+            this.EdgeButton.TabIndex = 25;
+            this.EdgeButton.Text = "Edge";
+            this.EdgeButton.UseVisualStyleBackColor = true;
+            this.EdgeButton.Visible = false;
+            this.EdgeButton.Click += new System.EventHandler(this.EdgeButton_Click);
+            // 
+            // PathfindingButton
+            // 
+            this.PathfindingButton.Location = new System.Drawing.Point(13, 166);
+            this.PathfindingButton.Name = "PathfindingButton";
+            this.PathfindingButton.Size = new System.Drawing.Size(92, 23);
+            this.PathfindingButton.TabIndex = 26;
+            this.PathfindingButton.Text = "Pathfinding";
+            this.PathfindingButton.UseVisualStyleBackColor = true;
+            this.PathfindingButton.Click += new System.EventHandler(this.PathfindButton_Click);
+            // 
+            // PathfindingTextbox
+            // 
+            this.PathfindingTextbox.Location = new System.Drawing.Point(13, 196);
+            this.PathfindingTextbox.Name = "PathfindingTextbox";
+            this.PathfindingTextbox.Size = new System.Drawing.Size(100, 22);
+            this.PathfindingTextbox.TabIndex = 27;
+            this.PathfindingTextbox.Visible = false;
+            // 
+            // PathfindingLoadButton
+            // 
+            this.PathfindingLoadButton.Location = new System.Drawing.Point(13, 225);
+            this.PathfindingLoadButton.Name = "PathfindingLoadButton";
+            this.PathfindingLoadButton.Size = new System.Drawing.Size(75, 23);
+            this.PathfindingLoadButton.TabIndex = 28;
+            this.PathfindingLoadButton.Text = "Load";
+            this.PathfindingLoadButton.UseVisualStyleBackColor = true;
+            this.PathfindingLoadButton.Visible = false;
+            this.PathfindingLoadButton.Click += new System.EventHandler(this.PathfindingLoadButton_Click);
+            // 
             // gridPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 675);
+            this.Controls.Add(this.PathfindingLoadButton);
+            this.Controls.Add(this.PathfindingTextbox);
+            this.Controls.Add(this.PathfindingButton);
+            this.Controls.Add(this.EdgeButton);
+            this.Controls.Add(this.WallButton);
+            this.Controls.Add(this.RepeatUntilButton);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.FilePathTextbox);
@@ -373,6 +446,12 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.Button ResetButton;
+        private System.Windows.Forms.Button RepeatUntilButton;
+        private System.Windows.Forms.Button WallButton;
+        private System.Windows.Forms.Button EdgeButton;
+        private System.Windows.Forms.Button PathfindingButton;
+        private System.Windows.Forms.TextBox PathfindingTextbox;
+        private System.Windows.Forms.Button PathfindingLoadButton;
     }
 }
 

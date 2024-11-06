@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Learn2CodeV2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,15 +16,15 @@ namespace MSO_P2
             _turnDirection = turnDirection;
         }
 
-        public void Execute(Character character)
+        public void Execute(Grid grid)
         {
             if (_turnDirection == "left")
             {
-                character.direction = (Direction)(((int)character.direction + 3) % 4);
+                grid.character.direction = (Direction)(((int)grid.character.direction + 3) % 4);
             }
             else if (_turnDirection == "right")
             {
-                character.direction = (Direction)(((int)character.direction + 1) % 4);
+                grid.character.direction = (Direction)(((int)grid.character.direction + 1) % 4);
             }
             Console.Write($"Turn {_turnDirection}, ");
         }
