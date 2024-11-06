@@ -9,7 +9,7 @@ namespace Learn2CodeV2
         public Grid FileToGrid(string filePath)
         {
             string[] rows = File.ReadAllLines(filePath);
-            Grid grid = new Grid(rows[0].Length, rows.Length);
+            Grid grid = new Grid(rows[0].Length, rows.Length, true);
 
             int y = 0;
             foreach (string row in rows)
@@ -29,7 +29,7 @@ namespace Learn2CodeV2
                     }
                     x++;
                 }
-                y++;
+                y--;
             }
 
             return grid;

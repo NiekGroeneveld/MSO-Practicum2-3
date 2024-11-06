@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PositionTests.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbbe198c104d6e9087bbb036fc1b506f2e25e1de")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbde9d57d1e3b4c937b7e84b756251a977b512f1")]
+>>>>>>> 9ee1c2ca0f4a39699441047402fe2aaf60fa543d
 [assembly: System.Reflection.AssemblyProductAttribute("PositionTests.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PositionTests.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
